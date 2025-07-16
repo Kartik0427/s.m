@@ -70,4 +70,12 @@ st.dataframe(df_result.style.format({
     "Difference (%)": "{:.2f}%"
 }), height=600)
 
+df_result_cleaned = df_result.fillna("N/A")
+
+st.dataframe(df_result_cleaned.style.format({
+    "NSE Price (₹)": lambda x: f"₹{x:.2f}" if isinstance(x, (int, float)) else x,
+    "BSE Price (₹)": lambda x: f"₹{x:.2f}" if isinstance(x, (int, float)) else x,
+    "Difference (%)": lambda x: f"{x:.2f}%" if isinstance(x, (int, float)) else x,
+}), height=600)
+
 st.caption("🔁 Auto-refreshes every 30 seconds. Built with free data scraping, may not be 100% accurate.")
