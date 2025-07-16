@@ -1,118 +1,73 @@
 import streamlit as st
 import pandas as pd
-import yfinance as yf
-import time
-from datetime import datetime
+import requests
+from bs4 import BeautifulSoup
+from nsetools import Nse
+from streamlit_autorefresh import st_autorefresh
 
-# Page Configuration
-st.set_page_config(
-    page_title="NSE vs BSE Arbitrage Dashboard",
-    page_icon="🚨",
-    layout="wide",
-)
+nse = Nse()
 
-# Data Loading Functions
-@st.cache_data(ttl=600)
-def get_stock_list():
+# Auto refresh every 30 seconds
+st_autorefresh(interval=30 * 1000, key="auto_refresh")
+
+st.set_page_config(page_title="NSE vs BSE Comparator", layout="wide")
+st.title("📊 NSE vs BSE Stock Price Comparator (Real-Time)")
+
+# Load stock mapping
+df_stocks = pd.read_csv("stocks.csv")
+
+# Cache to reduce redundant calls during development
+@st.cache_data(ttl=30)
+def get_nse_price(symbol):
     try:
-        df = pd.read_csv("bse_nse_mapping.csv")
-        return df
-    except FileNotFoundError:
-        st.error("Error: `bse_nse_mapping.csv` not found. Please ensure the file is in the same directory.")
+        quote = nse.get_quote(symbol)
+        if isinstance(quote, dict) and 'lastPrice' in quote:
+            return float(quote['lastPrice'].replace(',', ''))
+        return None
+    except:
         return None
 
-@st.cache_data(ttl=60)
-def get_live_price(ticker):
+def get_bse_price(bse_code):
     try:
-        stock = yf.Ticker(ticker)
-        price = stock.info.get('regularMarketPrice')
-        return price if price else stock.history(period='1d')['Close'].iloc[-1]
-    except Exception:
-        return None # Return None on failure
+        url = f"https://www.bseindia.com/stock-share-price/stockreach_stockdetails.aspx?scripcode={bse_code}"
+        headers = {'User-Agent': 'Mozilla/5.0'}
+        r = requests.get(url, headers=headers, timeout=5)
+        soup = BeautifulSoup(r.text, 'html.parser')
+        price_tag = soup.find('span', id='ContentPlaceHolder1_lblLastTradedPrice')
+        if price_tag:
+            return float(price_tag.text.replace(',', '').strip())
+    except:
+        return None
 
-def highlight_alerts(row, threshold):
-    if isinstance(row['Difference (%)'], (int, float)) and abs(row['Difference (%)']) > threshold:
-        return ['background-color: #8B0000; color: white'] * len(row)
-    return [''] * len(row)
+def calculate_difference(nse_price, bse_price):
+    if nse_price and bse_price:
+        return round(((nse_price - bse_price) / ((nse_price + bse_price) / 2)) * 100, 2)
+    return None
 
-# Main Application Logic
-st.title("🚨 NSE vs. BSE Price Arbitrage Dashboard")
-st.caption(f"Data from Yahoo Finance. Last refreshed: {datetime.now().strftime('%I:%M:%S %p')}")
+data = []
 
-stock_df = get_stock_list()
+with st.spinner("Fetching live data..."):
+    for _, row in df_stocks.iterrows():
+        name = row['name']
+        nse_symbol = row['nse_symbol']
+        bse_code = str(row['bse_code'])
 
-if stock_df is not None:
-    # UI Controls
-    st.sidebar.header("Dashboard Controls")
-    alert_threshold = st.sidebar.number_input("Alert Threshold (%)", 0.0, 10.0, 0.5, 0.1)
-    refresh_rate = st.sidebar.slider("Refresh Rate (seconds)", 5, 60, 10)
-    num_stocks = st.sidebar.slider("Number of Stocks to Display", 5, len(stock_df), 10)
+        nse_price = get_nse_price(nse_symbol)
+        bse_price = get_bse_price(bse_code)
+        diff = calculate_difference(nse_price, bse_price)
 
-    placeholder = st.empty()
+        data.append({
+            "Stock": name,
+            "NSE Price (₹)": nse_price,
+            "BSE Price (₹)": bse_price,
+            "Difference (%)": diff
+        })
 
-    while True:
-        subset_df = stock_df.head(num_stocks)
-        results = []
-        alerts_list = []
+df_result = pd.DataFrame(data)
+st.dataframe(df_result.style.format({
+    "NSE Price (₹)": "₹{:.2f}",
+    "BSE Price (₹)": "₹{:.2f}",
+    "Difference (%)": "{:.2f}%"
+}), height=600)
 
-        progress_bar = st.progress(0, text="Initializing...")
-        
-        for i, (index, row) in enumerate(subset_df.iterrows()):
-            progress_text = f"Fetching data for {row['companyName']}..."
-            progress_value = (i + 1) / num_stocks
-            progress_bar.progress(progress_value, text=progress_text)
-            
-            nse_ticker = str(row['nseSymbol']) + ".NS"
-            bse_ticker = str(row['bseScripCode']) + ".BO"
-            
-            nse_price = get_live_price(nse_ticker)
-            bse_price = get_live_price(bse_ticker)
-
-            # --- MODIFIED LOGIC TO HANDLE FAILED LOOKUPS ---
-            difference = None
-            percentage_diff = None
-            if nse_price is not None and bse_price is not None:
-                difference = nse_price - bse_price
-                percentage_diff = (difference / nse_price) * 100 if nse_price != 0 else 0
-                if abs(percentage_diff) > alert_threshold:
-                    alerts_list.append({
-                        "Company": row['companyName'],
-                        "NSE Price": f"₹{nse_price:.2f}",
-                        "BSE Price": f"₹{bse_price:.2f}",
-                        "Gap": f"{percentage_diff:.2f}%"
-                    })
-            
-            results.append({
-                "Company Name": row['companyName'],
-                "NSE Price (₹)": nse_price,
-                "BSE Price (₹)": bse_price,
-                "Difference (₹)": difference,
-                "Difference (%)": percentage_diff,
-            })
-        
-        progress_bar.empty()
-        results_df = pd.DataFrame(results)
-
-        with placeholder.container():
-            st.subheader(f"Alerts Triggered (Gap > {alert_threshold}%)")
-            if not alerts_list:
-                st.info("No stocks have crossed the alert threshold in this batch.")
-            else:
-                for alert in alerts_list:
-                    st.error(f"**{alert['Company']}**: Gap of **{alert['Gap']}**", icon="🔥")
-            
-            st.header("Live Price Comparison Table")
-            
-            if not results_df.empty:
-                # --- MODIFIED STYLING TO HANDLE 'None' VALUES ---
-                styled_df = results_df.style.apply(highlight_alerts, threshold=alert_threshold, axis=1).format({
-                    "NSE Price (₹)": lambda x: f"₹{x:.2f}" if x is not None else "N/A",
-                    "BSE Price (₹)": lambda x: f"₹{x:.2f}" if x is not None else "N/A",
-                    "Difference (₹)": lambda x: f"{x:+.2f}" if x is not None else "N/A",
-                    "Difference (%)": lambda x: f"{x:+.2f}%" if x is not None else "N/A",
-                })
-                st.dataframe(styled_df, use_container_width=True, hide_index=True)
-            else:
-                st.warning("Could not fetch data for any stocks.")
-
-        time.sleep(refresh_rate)
+st.caption("🔁 Auto-refreshes every 30 seconds. Built with free data scraping, may not be 100% accurate.")
