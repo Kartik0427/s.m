@@ -34,7 +34,7 @@ def clean_company_name(name):
 try:
     # --- Load the datasets ---
     # Load the BSE Bhavcopy file
-    bse_df = pd.read_csv('BSE.CSV')
+    bse_df = pd.read_csv('BSE.csv')
     print("BSE file loaded successfully.")
 
     # Load the NSE stock list file
@@ -78,6 +78,6 @@ try:
 
 except FileNotFoundError as e:
     print(f"\nError: {e}")
-    print("Please make sure both 'BSE.CSV' and 'NSE.csv' are in the same folder as this script.")
+    print("Please make sure both 'BSE.csv' and 'NSE.csv' are in the same folder as this script.")
 except Exception as e:
     print(f"\nAn unexpected error occurred: {e}")
