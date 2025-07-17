@@ -6,8 +6,8 @@ from datetime import datetime
 
 # --- Page Configuration ---
 st.set_page_config(
-    page_title="Angel One - Real-Time Dashboard",
-    page_icon="😇",
+    page_title="NSE vs. BSE Price Dashboard",
+    page_icon="📊",
     layout="wide",
 )
 
@@ -16,7 +16,6 @@ st.set_page_config(
 def load_instrument_list():
     """Loads the instrument list from the pre-generated CSV file."""
     try:
-        # Read the 'api_symbol' column as string to prevent type issues
         return pd.read_csv("instrument_list.csv", dtype={'api_symbol': str})
     except FileNotFoundError:
         st.error("Error: `instrument_list.csv` not found. Please run `generate_instrument_list.py` script.", icon="🔥")
@@ -32,7 +31,7 @@ def get_token(instrument_df, symbol, exchange):
     return res.iloc[0]['token'] if not res.empty else None
 
 # --- Main Application Logic ---
-st.title("😇 Angel One - Real-Time Price Dashboard")
+st.title("📊 NSE vs. BSE Real-Time Price Dashboard")
 
 # --- User Authentication ---
 st.sidebar.header("Angel One Login")
@@ -76,35 +75,22 @@ else:
     st.sidebar.header("Dashboard Controls")
     refresh_rate = st.sidebar.slider("Refresh Rate (seconds)", 5, 60, 10)
     num_stocks = st.sidebar.slider("Number of Stocks to Display", 1, len(stock_df), 10)
-    
-    # --- ADDED DEBUG OPTION ---
-    debug_mode = st.sidebar.checkbox("Show Debug Log 🐞")
 
     placeholder = st.empty()
-    
-    # Create a container for the debug log if the mode is on
-    if debug_mode:
-        st.markdown("---") # Visual separator
-        log_placeholder = st.container()
 
     while True:
         subset_df = stock_df.head(num_stocks)
         results = []
 
-        # If debug mode is on, prepare to log information
-        if debug_mode:
-            log_placeholder.markdown(f"**Cycle Start: {datetime.now().strftime('%I:%M:%S %p')}**")
-
         for _, row in subset_df.iterrows():
             nse_symbol = row['nseSymbol']
             bse_code = str(row['bseScripCode'])
             
+            # --- Get Tokens ---
             nse_token = get_token(instrument_df, nse_symbol, 'NSE')
-            bse_token = get_token(instrument_df, bse_code, 'BSE')
-
-            # Log token lookup results if debug mode is on
-            if debug_mode:
-                log_placeholder.write(f"Processing `{row['companyName']}`: Found Tokens -> NSE: `{nse_token}`, BSE: `{bse_token}`")
+            # --- THIS IS THE FIX ---
+            # Use the NSE symbol to find the BSE token
+            bse_token = get_token(instrument_df, nse_symbol, 'BSE')
 
             nse_price, bse_price = None, None
             
@@ -114,23 +100,16 @@ else:
                     ltp_data = st.session_state.smart_api_obj.ltpData("NSE", nse_symbol, str(nse_token))
                     if ltp_data.get('status'):
                         nse_price = ltp_data.get('data', {}).get('ltp')
-                    elif debug_mode: # Log errors only in debug mode
-                        log_placeholder.error(f"NSE API Error for `{nse_symbol}`:")
-                        log_placeholder.json(ltp_data)
-                except Exception as e:
-                    if debug_mode: log_placeholder.error(f"NSE Exception: {e}")
+                except Exception: pass
 
             # Fetch BSE Price
             if bse_token:
                 try:
+                    # The trading symbol for BSE is its Scrip Code
                     ltp_data = st.session_state.smart_api_obj.ltpData("BSE", bse_code, str(bse_token))
                     if ltp_data.get('status'):
                         bse_price = ltp_data.get('data', {}).get('ltp')
-                    elif debug_mode:
-                        log_placeholder.error(f"BSE API Error for `{bse_code}`:")
-                        log_placeholder.json(ltp_data)
-                except Exception as e:
-                    if debug_mode: log_placeholder.error(f"BSE Exception: {e}")
+                except Exception: pass
 
             difference, percentage_diff = None, None
             if nse_price is not None and bse_price is not None:
