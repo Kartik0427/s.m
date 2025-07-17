@@ -28,12 +28,23 @@ def get_token(instrument_df, symbol, exchange):
     ]
     return res.iloc[0]['token'] if not res.empty else None
 
+def display_heatmap_legend():
+    """Displays a manual legend for the heatmap colors."""
+    legend_html = """
+    <div style="display: flex; align-items: center; justify-content: flex-end; font-size: 14px; padding-top: 10px;">
+        <span style="margin-right: 10px;">Legend:</span>
+        <span style="background-color: #d62728; color: white; padding: 2px 8px; border-radius: 3px; margin-right: 5px;">Large Negative Diff</span>
+        <span style="background-color: #ffbf00; padding: 2px 8px; border-radius: 3px; margin-right: 5px;">Neutral</span>
+        <span style="background-color: #2ca02c; color: white; padding: 2px 8px; border-radius: 3px;">Large Positive Diff</span>
+    </div>
+    """
+    st.markdown(legend_html, unsafe_allow_html=True)
+
 # --- Main Application Logic ---
 st.title("⚡ NSE vs. BSE Real-Time Price Dashboard")
 
 # --- User Authentication ---
 st.sidebar.header("Angel One Login")
-# ... (The login section remains the same as the last working version)
 if 'api_key' not in st.session_state: st.session_state.api_key = ''
 if 'client_id' not in st.session_state: st.session_state.client_id = ''
 if 'password' not in st.session_state: st.session_state.password = ''
@@ -64,7 +75,6 @@ if st.sidebar.button("Login"):
     else:
         st.sidebar.warning("Please fill in all login details.", icon="⚠️")
 
-
 # --- Main Dashboard ---
 if st.session_state.smart_api_obj is None:
     st.info("Please log in using the sidebar to view the dashboard.")
@@ -74,24 +84,24 @@ else:
 
     st.sidebar.header("Dashboard Controls")
     refresh_rate = st.sidebar.slider("Refresh Rate (seconds)", 5, 60, 10)
-    num_stocks = st.sidebar.slider("Number of Stocks to Display", 1, len(stock_df), 10)
-
-    # --- NEW: Custom Filter and Sort Controls ---
-    st.sidebar.subheader("Filters & Sorting")
     
-    min_diff_filter = st.sidebar.number_input(
-        "Minimum Absolute Difference (%)", 
-        min_value=0.00, 
-        max_value=5.0, 
-        value=0.05, 
-        step=0.01,
-        help="Only show stocks where the percentage price gap is greater than this value."
+    # --- CHANGED: Replaced slider with number input ---
+    num_stocks = st.sidebar.number_input(
+        "Number of Stocks to Display",
+        min_value=1,
+        max_value=len(stock_df),
+        value=10,
+        step=1,
+        help=f"Enter a number between 1 and {len(stock_df)}."
     )
 
+    st.sidebar.subheader("Filters & Sorting")
+    min_diff_filter = st.sidebar.number_input(
+        "Minimum Absolute Difference (%)", 0.00, 5.0, 0.05, 0.01
+    )
     sort_by = st.sidebar.selectbox(
         "Sort Table By",
-        ["Default", "Biggest Difference (%)", "Biggest Difference (₹)"],
-        help="Sort the table to see the largest opportunities at the top."
+        ["Default", "Biggest Difference (%)", "Biggest Difference (₹)"]
     )
     
     placeholder = st.empty()
@@ -101,7 +111,7 @@ else:
         results = []
 
         for _, row in subset_df.iterrows():
-            # Data fetching logic remains the same...
+            # Data fetching logic
             nse_symbol = row['nseSymbol']
             bse_code = str(row['bseScripCode'])
             nse_token = get_token(instrument_df, nse_symbol, 'NSE')
@@ -131,40 +141,41 @@ else:
 
         results_df = pd.DataFrame(results).dropna()
 
-        # --- NEW: Apply Filtering and Sorting ---
         if not results_df.empty:
-            # Add an absolute percentage column for filtering and sorting
             results_df['abs_diff_pct'] = results_df['Difference (%)'].abs()
             results_df['abs_diff_rs'] = results_df['Difference (₹)'].abs()
-
-            # Apply the minimum difference filter
             results_df = results_df[results_df['abs_diff_pct'] >= min_diff_filter]
 
-            # Apply sorting based on user selection
             if sort_by == "Biggest Difference (%)":
                 results_df = results_df.sort_values(by="abs_diff_pct", ascending=False)
             elif sort_by == "Biggest Difference (₹)":
                 results_df = results_df.sort_values(by="abs_diff_rs", ascending=False)
             
-            # Drop the helper columns before displaying
             results_df = results_df.drop(columns=['abs_diff_pct', 'abs_diff_rs'])
 
         with placeholder.container():
             st.header("Live Price Comparison Table")
             
-            # --- NEW: Apply Heatmap Styling ---
-            st.dataframe(
-                results_df.style.background_gradient(
-                    cmap='RdYlGn', subset=['Difference (₹)', 'Difference (%)']
-                ).format({
-                    "NSE Price (₹)": "₹{:,.2f}",
-                    "BSE Price (₹)": "₹{:,.2f}",
-                    "Difference (₹)": "{:+.2f}",
-                    "Difference (%)": "{:+.2f}%",
-                }),
-                use_container_width=True, 
-                hide_index=True
-            )
-            st.caption(f"Last updated: {datetime.now().strftime('%I:%M:%S %p')}")
+            if not results_df.empty:
+                st.dataframe(
+                    results_df.style.background_gradient(
+                        cmap='RdYlGn', subset=['Difference (₹)', 'Difference (%)']
+                    ).format({
+                        "NSE Price (₹)": "₹{:,.2f}",
+                        "BSE Price (₹)": "₹{:,.2f}",
+                        "Difference (₹)": "{:+.2f}",
+                        "Difference (%)": "{:+.2f}%",
+                    }),
+                    use_container_width=True, 
+                    hide_index=True
+                )
+            else:
+                st.info("No stocks currently meet your filter criteria.")
+
+            col1, col2 = st.columns([3, 1])
+            with col1:
+                st.caption(f"Last updated: {datetime.now().strftime('%I:%M:%S %p')}")
+            with col2:
+                display_heatmap_legend()
 
         time.sleep(refresh_rate)
