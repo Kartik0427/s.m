@@ -1,52 +1,2134 @@
 companyName,nseSymbol,bseScripCode
-RELIANCE INDUSTRIES LTD,RELIANCE,500325
-TATA CONSULTANCY SERVICES LTD,TCS,532540
-HDFC BANK LTD,HDFCBANK,500180
-ICICI BANK LTD,ICICIBANK,532174
-INFOSYS LTD,INFY,500209
-HINDUSTAN UNILEVER LTD,HINDUNILVR,500696
-STATE BANK OF INDIA,SBIN,500112
-BHARTI AIRTEL LTD,BHARTIARTL,532454
-ITC LTD,ITC,500875
-LARSEN & TOUBRO LTD,LT,500510
-Adani Ports and Special Economic Zone Limited,ADANIPORTS,532921
-Sandhar Technologies Limited,SANDHAR,541163
-Bajaj Finance,BAJFINANCE,500034
-Kotak Mahindra Bank,KOTAKBANK,500247
-HCL Technologies,HCLTECH,532281
-Sun Pharmaceutical Industries,SUNPHARMA,524715
-Maruti Suzuki,MARUTI,532500
-Mahindra & Mahindra,M&M,500520
-UltraTech Cement,ULTRACEMCO,532538
-Axis Bank,AXISBANK,532215
-NTPC,NTPC,532555
-Bajaj Finserv,BAJAJFINSV,541153
-Oil & Natural Gas Corporation,ONGC,500312
-Titan Company,TITAN,500114
-Adani Enterprises,ADANIENT,512599
-Bharat Electronics,BEL,500049
-Power Grid Corporation of India,POWERGRID,532898
-Wipro,WIPRO,507685
-JSW Steel,JSWSTEEL,500228
-Tata Motors,TATAMOTORS,500570
-Coal India,COALINDIA,533278
-Nestle India,NESTLEIND,500790
-Bajaj Auto,BAJAJ-AUTO,532977
-Asian Paints,ASIANPAINT,500820
-Jio Financial Services,JIOFIN,543940
-Tata Steel,TATASTEEL,500470
-Trent,TRENT,500251
-Grasim Industries,GRASIM,500300
-SBI Life Insurance,SBILIFE,540719
-HDFC Life Insurance,HDFCLIFE,540777
-Eicher Motors,EICHERMOT,505200
-Tech Mahindra,TECHM,532755
-Hindalco Industries,HINDALCO,500440
-Shriram Finance,SHRIRAMFIN,511218
-Cipla,CIPLA,500087
-Tata Consumer Products,TATACONSUM,500800
-Apollo Hospitals,APOLLOHOSP,508869
-Dr Reddys Laboratories,DRREDDY,500124
-Hero MotoCorp,HEROMOTOCO,500182
-IndusInd Bank,INDUSINDBK,532187
-Zomato,ZOMATO,543320
+20 Microns Limited,20MICRONS,533022.0
+21st Century Management Services Limited,21STCENMGM,Not Available
+360 ONE WAM LIMITED,360ONE,542772.0
+3i Infotech Limited,3IINFOLTD,532628.0
+3M India Limited,3MINDIA,523395.0
+3P Land Holdings Limited,3PLAND,516092.0
+5Paisa Capital Limited,5PAISA,540776.0
+63 moons technologies limited,63MOONS,526881.0
+A2Z Infra Engineering Limited,A2ZINFRA,533292.0
+AAA Technologies Limited,AAATECH,543671.0
+Aadhar Housing Finance Limited,AADHARHFC,544176.0
+Aakash Exploration Services Limited,AAKASH,Not Available
+Aarey Drugs & Pharmaceuticals Limited,AAREYDRUGS,524412.0
+Aaron Industries Limited,AARON,Not Available
+Aartech Solonics Limited,AARTECH,542580.0
+Aarti Drugs Limited,AARTIDRUGS,524348.0
+Aarti Industries Limited,AARTIIND,524208.0
+Aarti Pharmalabs Limited,AARTIPHARM,543748.0
+Aarti Surfactants Limited,AARTISURF,543210.0
+Aarvee Denims & Exports Limited,AARVEEDEN,514274.0
+Aarvi Encon Limited,AARVI,Not Available
+Aavas Financiers Limited,AAVAS,541988.0
+Aban Offshore Limited,ABAN,523204.0
+ABB India Limited,ABB,500002.0
+Abbott India Limited,ABBOTINDIA,500488.0
+Aditya Birla Capital Limited,ABCAPITAL,540691.0
+Allied Blenders and Distillers Limited,ABDL,544203.0
+Aditya Birla Fashion and Retail Limited,ABFRL,Not Available
+A B Infrabuild Limited,ABINFRA,544281.0
+Aditya Birla Lifestyle Brands Limited,ABLBL,544403.0
+ABM International Limited,ABMINTLLTD,Not Available
+Aditya Birla Real Estate Limited,ABREL,Not Available
+Aditya Birla Sun Life AMC Limited,ABSLAMC,Not Available
+ACC Limited,ACC,500410.0
+Accelya Solutions India Limited,ACCELYA,Not Available
+Accuracy Shipping Limited,ACCURACY,Not Available
+Action Construction Equipment Limited,ACE,532762.0
+Ace Integrated Solutions Limited,ACEINTEG,Not Available
+Archean Chemical Industries Limited,ACI,Not Available
+Andhra Cements Limited,ACL,532141.0
+Allcargo Gati Limited,ACLGATI,532345.0
+Acme Solar Holdings Limited,ACMESOLAR,544283.0
+Acutaas Chemicals Limited,ACUTAAS,543349.0
+Adani Energy Solutions Limited,ADANIENSOL,539254.0
+Adani Enterprises Limited,ADANIENT,512599.0
+Adani Green Energy Limited,ADANIGREEN,541450.0
+Adani Ports and Special Economic Zone Limited,ADANIPORTS,Not Available
+Adani Power Limited,ADANIPOWER,533096.0
+ADF Foods Limited,ADFFOODS,519183.0
+Archidply Decor Limited,ADL,Not Available
+Ador Welding Limited,ADOR,517041.0
+Adroit Infotech Limited,ADROITINFO,532172.0
+Allied Digital Services Limited,ADSL,532875.0
+Advani Hotels & Resorts (India) Limited,ADVANIHOTR,523269.0
+Advanced Enzyme Technologies Limited,ADVENZYMES,Not Available
+Aegis Logistics Limited,AEGISLOG,500003.0
+Aegis Vopak Terminals Limited,AEGISVOPAK,544407.0
+Aeroflex Enterprises Limited,AEROENTER,511076.0
+Aeroflex Industries Limited,AEROFLEX,543972.0
+Aether Industries Limited,AETHER,543534.0
+Afcons Infrastructure Limited,AFCONS,544280.0
+Affle 3i Limited,AFFLE,542752.0
+Affordable Robotic & Automation Limited,AFFORDABLE,Not Available
+Akme Fintrade (India) Limited,AFIL,544200.0
+Abans Financial Services Limited,AFSL,Not Available
+Agarwal Industrial Corporation Limited,AGARIND,Not Available
+Dr. Agarwal's Health Care Limited,AGARWALEYE,Not Available
+AGI Greenpac Limited,AGI,500187.0
+Agi Infra Limited,AGIIL,539042.0
+Agri-Tech (India) Limited,AGRITECH,Not Available
+Agro Phos India Limited,AGROPHOS,Not Available
+AGS Transact Technologies Limited,AGSTRA,Not Available
+Ahlada Engineers Limited,AHLADA,Not Available
+Asian Hotels (East) Limited,AHLEAST,533227.0
+Ahluwalia Contracts (India) Limited,AHLUCONT,Not Available
+AIA Engineering Limited,AIAENG,532683.0
+Authum Investment & Infrastructure Limited,AIIL,Not Available
+Airan Limited,AIRAN,543811.0
+Airo Lam limited,AIROLAM,Not Available
+Ajanta Pharma Limited,AJANTPHARM,532331.0
+Ajax Engineering Limited,AJAXENGG,544356.0
+Ajmera Realty & Infra India Limited,AJMERA,Not Available
+Ajooni Biotech Limited,AJOONI,Not Available
+Akash Infra-Projects Limited,AKASH,Not Available
+Akg Exim Limited,AKG,Not Available
+AKI India Limited,AKI,542020.0
+Akshar Spintex Limited,AKSHAR,541303.0
+AksharChem India Limited,AKSHARCHEM,524598.0
+Aksh Optifibre Limited,AKSHOPTFBR,532351.0
+Akums Drugs and Pharmaceuticals Limited,AKUMS,Not Available
+Akzo Nobel India Limited,AKZOINDIA,500710.0
+Alankit Limited,ALANKIT,531082.0
+Albert David Limited,ALBERTDAVD,524075.0
+Alembic Limited,ALEMBICLTD,506235.0
+Alicon Castalloy Limited,ALICON,531147.0
+Alivus Life Sciences Limited,ALIVUS,543322.0
+Alkali Metals Limited,ALKALI,533029.0
+Alkem Laboratories Limited,ALKEM,539523.0
+Alkyl Amines Chemicals Limited,ALKYLAMINE,506767.0
+Allcargo Logistics Limited,ALLCARGO,532749.0
+Alldigi Tech Limited,ALLDIGI,532633.0
+Almondz Global Securities Limited,ALMONDZ,531400.0
+Alok Industries Limited,ALOKINDS,521070.0
+Alpa Laboratories Limited,ALPA,532878.0
+Alphageo (India) Limited,ALPHAGEO,526397.0
+Amber Enterprises India Limited,AMBER,Not Available
+Ambica Agarbathies & Aroma industries Limited,AMBICAAGAR,Not Available
+Ambika Cotton Mills Limited,AMBIKCO,531978.0
+Ambuja Cements Limited,AMBUJACEM,500425.0
+AMD Industries Limited,AMDIND,532828.0
+Amj Land Holdings Limited,AMJLAND,500343.0
+Amines & Plasticizers Limited,AMNPLST,506248.0
+Amrutanjan Health Care Limited,AMRUTANJAN,590006.0
+Anand Rathi Wealth Limited,ANANDRATHI,543415.0
+Anant Raj Limited,ANANTRAJ,515055.0
+ANDHRA PAPER LIMITED,ANDHRAPAP,502330.0
+The Andhra Sugars Limited,ANDHRSUGAR,Not Available
+Angel One Limited,ANGELONE,543235.0
+Anik Industries Limited,ANIKINDS,519383.0
+Ankit Metal & Power Limited,ANKITMETAL,532870.0
+Anmol India Limited,ANMOL,542437.0
+Ansal Properties & Infrastructure Limited,ANSALAPI,Not Available
+Antarctica Limited,ANTGRAPHIC,Not Available
+Anuh Pharma Limited,ANUHPHR,506260.0
+The Anup Engineering Limited,ANUP,542460.0
+Anupam Rasayan India Limited,ANURAS,543275.0
+Apar Industries Limited,APARINDS,532259.0
+Anjani Portland Cement Limited,APCL,518091.0
+Apcotex Industries Limited,APCOTEXIND,523694.0
+Apex Frozen Foods Limited,APEX,540692.0
+APL Apollo Tubes Limited,APLAPOLLO,533758.0
+Alembic Pharmaceuticals Limited,APLLTD,533573.0
+Apollo Micro Systems Limited,APOLLO,540879.0
+Apollo Hospitals Enterprise Limited,APOLLOHOSP,Not Available
+Apollo Pipes Limited,APOLLOPIPE,531761.0
+Apollo Tyres Limited,APOLLOTYRE,500877.0
+Apollo Sindoori Hotels Limited,APOLSINHOT,Not Available
+Aptech Limited,APTECHT,532475.0
+Aptus Value Housing Finance India Limited,APTUS,Not Available
+Archidply Industries Limited,ARCHIDPLY,532994.0
+Archies Limited,ARCHIES,532212.0
+Amara Raja Energy & Mobility Limited,ARE&M,Not Available
+Rajdarshan Industries Limited,ARENTERP,Not Available
+Aries Agro Limited,ARIES,532935.0
+Arihant Capital Markets Limited,ARIHANTCAP,511605.0
+Arihant Superstructures Limited,ARIHANTSUP,Not Available
+Arisinfra Solutions Limited,ARISINFRA,544419.0
+Arkade Developers Limited,ARKADE,544261.0
+Arman Financial Services Limited,ARMANFIN,531179.0
+Aro Granite Industries Limited,AROGRANITE,513729.0
+Arrow Greentech Limited,ARROWGREEN,516064.0
+Arshiya Limited,ARSHIYA,506074.0
+ARSS Infrastructure Projects Limited,ARSSINFRA,Not Available
+Artemis Medicare Services Limited,ARTEMISMED,Not Available
+Art Nirman Limited,ARTNIRMAN,Not Available
+Arvee Laboratories (India) Limited,ARVEE,Not Available
+Arvind Limited,ARVIND,500101.0
+Arvind Fashions Limited,ARVINDFASN,542484.0
+Arvind SmartSpaces Limited,ARVSMART,539301.0
+Asahi India Glass Limited,ASAHIINDIA,515030.0
+Asahi Songwon Colors Limited,ASAHISONG,532853.0
+Automotive Stampings and Assemblies Limited,ASAL,Not Available
+Associated Alcohols & Breweries Ltd.,ASALCBR,Not Available
+Ashapura Minechem Limited,ASHAPURMIN,527001.0
+Ashiana Housing Limited,ASHIANA,523716.0
+Ashima Limited,ASHIMASYN,514286.0
+Ashoka Buildcon Limited,ASHOKA,533271.0
+Ashoka Metcast Limited,ASHOKAMET,540923.0
+Ashok Leyland Limited,ASHOKLEY,500477.0
+Asian Energy Services Limited,ASIANENE,530355.0
+Asian Hotels (North) Limited,ASIANHOTNR,500023.0
+Asian Paints Limited,ASIANPAINT,500820.0
+Asian Granito India Limited,ASIANTILES,532888.0
+ASK Automotive Limited,ASKAUTOLTD,544022.0
+Bartronics India Limited,ASMS,532694.0
+Aspinwall and Company Limited,ASPINWALL,Not Available
+Astec LifeSciences Limited,ASTEC,533138.0
+Astec LifeSciences Limited,ASTEC,751008.0
+Astec LifeSciences Ltd-RE,ASTEC-RE,Not Available
+Aster DM Healthcare Limited,ASTERDM,540975.0
+Astral Limited,ASTRAL,532830.0
+Astra Microwave Products Limited,ASTRAMICRO,532493.0
+AstraZeneca Pharma India Limited,ASTRAZEN,506820.0
+Astron Paper & Board Mill Limited,ASTRON,Not Available
+Atal Realtech Limited,ATALREAL,543911.0
+Atam Valves Limited,ATAM,543236.0
+Adani Total Gas Limited,ATGL,542066.0
+Ather Energy Limited,ATHERENERG,544397.0
+Allcargo Terminals Limited,ATL,543954.0
+ATLANTAA LIMITED,ATLANTAA,532759.0
+Atlas Cycles (Haryana) Limited,ATLASCYCLE,505029.0
+Atul Limited,ATUL,500027.0
+Atul Auto Limited,ATULAUTO,531795.0
+AU Small Finance Bank Limited,AUBANK,540611.0
+Aurionpro Solutions Limited,AURIONPRO,532668.0
+Aurobindo Pharma Limited,AUROPHARMA,524804.0
+Aurum PropTech Limited,AURUM,539289.0
+Ausom Enterprise Limited,AUSOMENT,509009.0
+Automotive Axles Limited,AUTOAXLES,505010.0
+Autoline Industries Limited,AUTOIND,532797.0
+Avadh Sugar & Energy Limited,AVADHSUGAR,540649.0
+Avalon Technologies Limited,AVALON,543896.0
+Avantel Limited,AVANTEL,532406.0
+Avanti Feeds Limited,AVANTIFEED,512573.0
+AVG Logistics Limited,AVG,543910.0
+Aditya Vision Limited,AVL,540205.0
+Avonmore Capital & Management Services Limited,AVONMORE,Not Available
+AVRO INDIA LIMITED,AVROIND,543512.0
+AVT Natural Products Limited,AVTNPL,519105.0
+Awfis Space Solutions Limited,AWFIS,544181.0
+Antony Waste Handling Cell Limited,AWHCL,Not Available
+AWL Agri Business Limited,AWL,543458.0
+Axis Bank Limited,AXISBANK,532215.0
+AXISCADES Technologies Limited,AXISCADES,532395.0
+Axita Cotton Limited,AXITA,542285.0
+AYM Syntex Limited,AYMSYNTEX,508933.0
+Azad Engineering Limited,AZAD,544061.0
+Bafna Pharmaceuticals Limited,BAFNAPH,532989.0
+B.A.G Films and Media Limited,BAGFILMS,Not Available
+Baid Finserv Limited,BAIDFIN,511724.0
+Bajaj Auto Limited,BAJAJ-AUTO,532977.0
+Bajaj Consumer Care Limited,BAJAJCON,533229.0
+Bajaj Electricals Limited,BAJAJELEC,500031.0
+Bajaj Finserv Limited,BAJAJFINSV,532978.0
+Bajaj Healthcare Limited,BAJAJHCARE,539872.0
+Bajaj Housing Finance Limited,BAJAJHFL,544252.0
+Bajaj Hindusthan Sugar Limited,BAJAJHIND,500032.0
+Bajaj Holdings & Investment Limited,BAJAJHLDNG,Not Available
+Indef Manufacturing Limited,BAJAJINDEF,544364.0
+Bajel Projects Limited,BAJEL,544042.0
+Bajaj Finance Limited,BAJFINANCE,500034.0
+Shree Tirupati Balajee Agro Trading Company Limited,BALAJEE,Not Available
+Balaji Telefilms Limited,BALAJITELE,532382.0
+Balaji Amines Limited,BALAMINES,530999.0
+BALAXI PHARMACEUTICALS LIMITED,BALAXI,Not Available
+Balkrishna Paper Mills Limited,BALKRISHNA,539251.0
+Balkrishna Industries Limited,BALKRISIND,502355.0
+Balmer Lawrie & Company Limited,BALMLAWRIE,Not Available
+Bal Pharma Limited,BALPHARMA,524824.0
+Balrampur Chini Mills Limited,BALRAMCHIN,500038.0
+Balu Forge Industries Limited,BALUFORGE,531112.0
+Banaras Beads Limited,BANARBEADS,526849.0
+Bannari Amman Sugars Limited,BANARISUG,500041.0
+Banco Products (I) Limited,BANCOINDIA,Not Available
+Bandhan Bank Limited,BANDHANBNK,541153.0
+Bang Overseas Limited,BANG,532946.0
+Banka BioLoo Limited,BANKA,Not Available
+Bank of Baroda,BANKBARODA,532134.0
+Bank of India,BANKINDIA,532149.0
+Bansal Wire Industries Limited,BANSALWIRE,544209.0
+Banswara Syntex Limited,BANSWRAS,503722.0
+Barbeque Nation Hospitality Limited,BARBEQUE,Not Available
+BASF India Limited,BASF,500042.0
+Bannari Amman Spinning Mills Limited,BASML,Not Available
+Bata India Limited,BATAINDIA,500043.0
+Bayer Cropscience Limited,BAYERCROP,506285.0
+Bharat Bijlee Limited,BBL,503960.0
+Black Box Limited,BBOX,500463.0
+Bombay Burmah Trading Corporation Limited,BBTC,Not Available
+B&B Triplewall Containers Limited,BBTCL,Not Available
+Brightcom Group Limited,BCG,532368.0
+Bcl Industries Limited,BCLIND,524332.0
+Brand Concepts Limited,BCONCEPTS,543442.0
+Bharat Dynamics Limited,BDL,541143.0
+Beardsell Limited,BEARDSELL,Not Available
+Mrs. Bectors Food Specialities Limited,BECTORFOOD,543253.0
+Bedmutha Industries Limited,BEDMUTHA,533270.0
+Bharat Electronics Limited,BEL,500049.0
+Bella Casa Fashion & Retail Limited,BELLACASA,Not Available
+Belrise Industries Limited,BELRISE,544405.0
+BEML Limited,BEML,500048.0
+Bhansali Engineering Polymers Limited,BEPL,500052.0
+Berger Paints (I) Limited,BERGEPAINT,Not Available
+Best Agrolife Limited,BESTAGRO,539660.0
+BF Investment Limited,BFINVEST,533303.0
+BF Utilities Limited,BFUTILITIE,532430.0
+BGR Energy Systems Limited,BGRENERGY,532930.0
+Bhagiradha Chemicals & Industries Limited,BHAGCHEM,Not Available
+Bhageria Industries Limited,BHAGERIA,530803.0
+Bhagyanagar India Limited,BHAGYANGR,512296.0
+Bhandari Hosiery Exports Limited,BHANDARI,512608.0
+Bharat Forge Limited,BHARATFORG,500493.0
+Bharat Gears Limited,BHARATGEAR,505688.0
+Bharat Rasayan Limited,BHARATRAS,590021.0
+Bharat Seats Limited,BHARATSE,523229.0
+Bharat Wire Ropes Limited,BHARATWIRE,539799.0
+Bharti Airtel Limited,BHARTIARTL,532454.0
+Bharti Airtel Limited,BHARTIARTL,890157.0
+Bharti Hexacom Limited,BHARTIHEXA,544162.0
+Bharat Heavy Electricals Limited,BHEL,100103.0
+Bharat Heavy Electricals Limited,BHEL,500103.0
+Bigbloc Construction Limited,BIGBLOC,540061.0
+Bikaji Foods International Limited,BIKAJI,Not Available
+Bhartiya International Limited,BIL,526666.0
+BIL VYAPAR LIMITED,BILVYAPAR,500059.0
+Biocon Limited,BIOCON,532523.0
+Biofil Chemicals & Pharmaceuticals Limited,BIOFILCHEM,Not Available
+Birla Cable Limited,BIRLACABLE,500060.0
+Birla Corporation Limited,BIRLACORPN,500335.0
+Aditya Birla Money Limited,BIRLAMONEY,532974.0
+BirlaNu Limited,BIRLANU,509675.0
+Zinka Logistics Solutions Limited,BLACKBUCK,Not Available
+BEML Land Assets Limited,BLAL,543898.0
+BLB Limited,BLBLIMITED,532290.0
+Bliss GVS Pharma Limited,BLISSGVS,506197.0
+B. L. Kashyap and Sons Limited,BLKASHYAP,Not Available
+BLS International Services Limited,BLS,540073.0
+BLS E-Services Limited,BLSE,544107.0
+Blue Coast Hotels Limited,BLUECOAST,531495.0
+Blue Dart Express Limited,BLUEDART,526612.0
+Blue Jet Healthcare Limited,BLUEJET,544009.0
+Blue Star Limited,BLUESTARCO,500067.0
+Bluspring Enterprises Limited,BLUSPRING,544414.0
+Bodal Chemicals Limited,BODALCHEM,524370.0
+Bohra Industries Limited,BOHRAIND,Not Available
+Bombay Dyeing & Mfg Company Limited,BOMDYEING,Not Available
+Borana Weaves Limited,BORANA,544404.0
+Borosil Limited,BOROLTD,543212.0
+BOROSIL RENEWABLES LIMITED,BORORENEW,502219.0
+Borosil Scientific Limited,BOROSCI,544184.0
+Bosch Limited,BOSCHLTD,500530.0
+Bharat Petroleum Corporation Limited,BPCL,Not Available
+BPL Limited,BPL,500074.0
+Brigade Enterprises Limited,BRIGADE,532929.0
+Britannia Industries Limited,BRITANNIA,500825.0
+Bharat Road Network Limited,BRNL,540700.0
+Brooks Laboratories Limited,BROOKS,533543.0
+BSE Limited,BSE,Not Available
+Bombay Super Hybrid Seeds Limited,BSHSL,Not Available
+BSL Limited,BSL,514045.0
+BIRLASOFT LIMITED,BSOFT,532400.0
+Bodhi Tree Multimedia Limited,BTML,543767.0
+Butterfly Gandhimathi Appliances Limited,BUTTERFLY,Not Available
+Barak Valley Cements Limited,BVCL,532916.0
+The Byke Hospitality Ltd,BYKE,531373.0
+California Software Company Limited,CALSOFT,Not Available
+Camlin Fine Sciences Limited,CAMLINFINE,532834.0
+Campus Activewear Limited,CAMPUS,543523.0
+Computer Age Management Services Limited,CAMS,Not Available
+Canara Bank,CANBK,532483.0
+Can Fin Homes Limited,CANFINHOME,511196.0
+Cantabil Retail India Limited,CANTABIL,533267.0
+Capacit'e Infraprojects Limited,CAPACITE,Not Available
+Capital Small Finance Bank Limited,CAPITALSFB,544120.0
+Caplin Point Laboratories Limited,CAPLIPOINT,524742.0
+Capital Trust Limited-RE,CAPTRU-RE,Not Available
+Capital Trust Limited,CAPTRUST,511505.0
+Capital Trust Limited,CAPTRUST,751004.0
+Carborundum Universal Limited,CARBORUNIV,513375.0
+CARE Ratings Limited,CARERATING,534804.0
+Carraro India Limited,CARRARO,544320.0
+Cartrade Tech Limited,CARTRADE,543333.0
+CARYSIL LIMITED,CARYSIL,524091.0
+Castrol India Limited,CASTROLIND,500870.0
+Consolidated Construction Consortium Limited,CCCL,Not Available
+Country Club Hospitality & Holidays Limited,CCHHL,Not Available
+CCL Products (India) Limited,CCL,519600.0
+Central Depository Services (India) Limited,CDSL,Not Available
+CEAT Limited,CEATLTD,500878.0
+Ceigall India Limited,CEIGALL,544223.0
+Celebrity Fashions Limited,CELEBRITY,532695.0
+Cello World Limited,CELLO,544012.0
+Century Enka Limited,CENTENKA,500280.0
+Century Extrusions Limited,CENTEXT,500083.0
+Central Bank of India,CENTRALBK,532885.0
+Centrum Capital Limited,CENTRUM,501150.0
+Centum Electronics Limited,CENTUM,517544.0
+Century Plyboards (India) Limited,CENTURYPLY,Not Available
+Cera Sanitaryware Limited,CERA,532443.0
+Cerebra Integrated Technologies Limited,CEREBRAINT,Not Available
+CESC Limited,CESC,500084.0
+Concord Enviro Systems Limited,CEWATER,544315.0
+Capri Global Capital Limited,CGCL,531595.0
+CG Power and Industrial Solutions Limited,CGPOWER,Not Available
+Chalet Hotels Limited,CHALET,542399.0
+Chambal Fertilizers & Chemicals Limited,CHAMBLFERT,Not Available
+Chembond Material Technologies Limited,CHEMBOND,530871.0
+Chemcon Speciality Chemicals Limited,CHEMCON,Not Available
+Chemfab Alkalis Limited,CHEMFAB,541269.0
+Chemplast Sanmar Limited,CHEMPLASTS,543336.0
+Chennai Petroleum Corporation Limited,CHENNPETRO,Not Available
+Cheviot Company Limited,CHEVIOT,Not Available
+Choice International Limited,CHOICEIN,531358.0
+Cholamandalam Investment and Finance Company Limited,CHOLAFIN,Not Available
+Cholamandalam Financial Holdings Limited,CHOLAHLDNG,Not Available
+CIE Automotive India Limited,CIEINDIA,532756.0
+Capital India Finance Limited,CIFL,530879.0
+Cigniti Technologies Limited,CIGNITITEC,534758.0
+Cineline India Limited,CINELINE,532807.0
+Cinevista Limited,CINEVISTA,532324.0
+Cipla Limited,CIPLA,500087.0
+Clean Science and Technology Limited,CLEAN,Not Available
+CL Educate Limited,CLEDUCATE,540403.0
+Chaman Lal Setia Exports Limited,CLSEL,530307.0
+CMS Info Systems Limited,CMSINFO,543441.0
+Coal India Limited,COALINDIA,533278.0
+Coastal Corporation Limited,COASTCORP,501831.0
+Cochin Shipyard Limited,COCHINSHIP,540678.0
+Coffee Day Enterprises Limited,COFFEEDAY,539436.0
+Coforge Limited,COFORGE,532541.0
+Cohance Lifesciences Limited,COHANCE,543064.0
+Colgate Palmolive (India) Limited,COLPAL,Not Available
+Compuage Infocom Limited,COMPINFO,532456.0
+Compucom Software Limited,COMPUSOFT,532339.0
+Commercial Syn Bags Limited,COMSYN,539986.0
+Container Corporation of India Limited,CONCOR,531344.0
+Concord Biotech Limited,CONCORDBIO,543960.0
+Confidence Petroleum India Limited,CONFIPET,526829.0
+Consolidated Finvest & Holdings Limited,CONSOFINVT,Not Available
+Control Print Limited,CONTROLPR,522295.0
+Coral India Finance & Housing Limited,CORALFINAC,531556.0
+Cords Cable Industries Limited,CORDSCABLE,532941.0
+Coromandel International Limited,COROMANDEL,506395.0
+COSMO FIRST LIMITED,COSMOFIRST,508814.0
+Country Condo's Limited,COUNCODOS,531624.0
+CP Capital Limited,CPCAP,533260.0
+Craftsman Automation Limited,CRAFTSMAN,543276.0
+Creative Newtech Limited,CREATIVE,Not Available
+Creative Eye Limited,CREATIVEYE,532392.0
+CREDITACCESS GRAMEEN LIMITED,CREDITACC,541770.0
+Crest Ventures Limited,CREST,Not Available
+CRISIL Limited,CRISIL,500092.0
+Crizac Limited,CRIZAC,544439.0
+Crompton Greaves Consumer Electricals Limited,CROMPTON,Not Available
+Crown Lifters Limited,CROWN,Not Available
+CSB Bank Limited,CSBBANK,542867.0
+CSL Finance Limited,CSLFINANCE,530067.0
+Cambridge Technology Enterprises Limited,CTE,Not Available
+City Union Bank Limited,CUB,532210.0
+Cubex Tubings Limited,CUBEXTUB,526027.0
+Cummins India Limited,CUMMINSIND,500480.0
+Cupid Limited,CUPID,530843.0
+Cura Technologies Limited,CURAA,532332.0
+Cyber Media (India) Limited,CYBERMEDIA,532640.0
+Cybertech Systems And Software Limited,CYBERTECH,532173.0
+Cyient Limited,CYIENT,532175.0
+Cyient DLM Limited,CYIENTDLM,543933.0
+Dabur India Limited,DABUR,500096.0
+Dalmia Bharat Limited,DALBHARAT,542216.0
+Dalmia Bharat Sugar and Industries Limited,DALMIASUG,Not Available
+Dam Capital Advisors Limited,DAMCAPITAL,544316.0
+Damodar Industries Limited,DAMODARIND,521220.0
+Dangee Dums Limited,DANGEE,Not Available
+Datamatics Global Services Limited,DATAMATICS,532528.0
+Data Patterns (India) Limited,DATAPATTNS,543428.0
+Davangere Sugar Company Limited,DAVANGERE,Not Available
+D.B.Corp Limited,DBCORP,Not Available
+Deepak Builders & Engineers India Limited,DBEIL,Not Available
+Dilip Buildcon Limited,DBL,540047.0
+Dhampur Bio Organics Limited,DBOL,543593.0
+Valor Estate Limited,DBREALTY,533160.0
+DB (International) Stock Brokers Limited,DBSTOCKBRO,Not Available
+Dishman Carbogen Amcis Limited,DCAL,540701.0
+DCB Bank Limited,DCBBANK,532772.0
+Dc Infotech And Communication Limited,DCI,543636.0
+DCM  Limited,DCM,502820.0
+DCM Financial Services Limited,DCMFINSERV,511611.0
+DCM Nouvelle Limited,DCMNVL,542729.0
+DCM Shriram Limited,DCMSHRIRAM,523367.0
+DCM Shriram Industries Limited,DCMSRIND,523369.0
+DCW Limited,DCW,500117.0
+DCX Systems Limited,DCXINDIA,543650.0
+Ddev Plastiks Industries Limited,DDEVPLSTIK,Not Available
+Deccan Cements Limited,DECCANCE,502137.0
+DEE Development Engineers Limited,DEEDEV,Not Available
+Deepak Fertilizers and Petrochemicals Corporation Limited,DEEPAKFERT,Not Available
+Deepak Nitrite Limited,DEEPAKNTR,506401.0
+Deep Industries Limited,DEEPINDS,543288.0
+Delhivery Limited,DELHIVERY,543529.0
+DELPHI WORLD MONEY LIMITED,DELPHIFX,533452.0
+Delta Corp Limited,DELTACORP,532848.0
+Delta Manufacturing Limited,DELTAMAGNT,504286.0
+Den Networks Limited,DEN,533137.0
+De Nora India Limited,DENORA,590031.0
+Denta Water and Infra Solutions Limited,DENTA,Not Available
+Dev Information Technology Limited,DEVIT,Not Available
+Devyani International Limited,DEVYANI,543330.0
+Digicontent Limited,DGCONTENT,542685.0
+Dhampur Sugar Mills Limited,DHAMPURSUG,500119.0
+Dhanlaxmi Bank Limited,DHANBANK,532180.0
+Dhani Services Limited,DHANI,532960.0
+Dhanuka Agritech Limited,DHANUKA,507717.0
+DHARAN INFRA-EPC LIMITED,DHARAN,541161.0
+Dharmaj Crop Guard Limited,DHARMAJ,543687.0
+Dhruv Consultancy Services Limited,DHRUV,Not Available
+Dhunseri Investments Limited,DHUNINV,533336.0
+Diamond Power Infrastructure Limited,DIACABS,Not Available
+Diamines & Chemicals Limited,DIAMINESQ,500120.0
+Prataap Snacks Limited,DIAMONDYD,540724.0
+DIC India Limited,DICIND,500089.0
+Diffusion Engineers Limited,DIFFNKG,544264.0
+Digidrive Distributors Limited,DIGIDRIVE,544079.0
+DiGiSPICE Technologies Limited,DIGISPICE,517214.0
+Digitide Solutions Limited,DIGITIDE,544413.0
+Digjam Limited,DIGJAMLMTD,539979.0
+Debock Industries Limited,DIL,Not Available
+Dish TV India Limited,DISHTV,532839.0
+Divgi Torqtransfer Systems Limited,DIVGIITTS,Not Available
+Divi's Laboratories Limited,DIVISLAB,532488.0
+Dixon Technologies (India) Limited,DIXON,Not Available
+DJ Mediaprint & Logistics Limited,DJML,Not Available
+DLF Limited,DLF,532868.0
+D-Link (India) Limited,DLINKINDIA,533146.0
+Avenue Supermarts Limited,DMART,540376.0
+DMCC SPECIALITY CHEMICALS LIMITED,DMCC,Not Available
+Diligent Media Corporation Limited,DNAMEDIA,Not Available
+Dodla Dairy Limited,DODLA,543306.0
+Dolat Algotech Limited,DOLATALGO,505526.0
+Dollar Industries Limited,DOLLAR,541403.0
+Dolphin Offshore Enterprises (India) Limited,DOLPHIN,Not Available
+DOMS Industries Limited,DOMS,544045.0
+Donear Industries Limited,DONEAR,512519.0
+D. P. Abhushan Limited,DPABHUSHAN,544161.0
+DPSC Limited,DPSCLTD,Not Available
+D P Wires Limited,DPWIRES,Not Available
+DRC Systems India Limited,DRCSYSTEMS,543268.0
+Dreamfolks Services Limited,DREAMFOLKS,543591.0
+Dredging Corporation of India Limited,DREDGECORP,523618.0
+Dr. Reddy's Laboratories Limited,DRREDDY,Not Available
+Dynacons Systems & Solutions Limited,DSSL,Not Available
+Dhunseri Tea & Industries Limited,DTIL,538902.0
+Ducon Infratechnologies Limited,DUCON,534674.0
+Dhunseri Ventures Limited,DVL,523736.0
+Dwarikesh Sugar Industries Limited,DWARKESH,532610.0
+Dynamic Cables Limited,DYCL,540795.0
+Dynamatic Technologies Limited,DYNAMATECH,505242.0
+Dynemic Products Limited,DYNPRO,532707.0
+E2E Networks Limited,E2E,Not Available
+Easy Trip Planners Limited,EASEMYTRIP,543272.0
+eClerx Services Limited,ECLERX,532927.0
+Ecos (India) Mobility & Hospitality Limited,ECOSMOBLTY,Not Available
+Edelweiss Financial Services Limited,EDELWEISS,Not Available
+Eicher Motors Limited,EICHERMOT,505200.0
+EID Parry India Limited,EIDPARRY,Not Available
+Enviro Infra Engineers Limited,EIEL,544290.0
+Euro India Fresh Foods Limited,EIFFL,Not Available
+EIH Associated Hotels Limited,EIHAHOTELS,523127.0
+EIH Limited,EIHOTEL,500840.0
+Eimco Elecon (India) Limited,EIMCOELECO,523708.0
+Everest Kanto Cylinder Limited,EKC,532684.0
+Eldeco Housing And Industries Limited,ELDEHSG,Not Available
+Elecon Engineering Company Limited,ELECON,Not Available
+Electrosteel Castings Limited,ELECTCAST,500128.0
+Electrotherm (India) Limited,ELECTHERM,526608.0
+Elgi Equipments Limited,ELGIEQUIP,522074.0
+Elgi Rubber Company Limited,ELGIRUBCO,Not Available
+Elin Electronics Limited,ELIN,543725.0
+Ellenbarrie Industrial Gases Limited,ELLEN,Not Available
+Emami Limited,EMAMILTD,531162.0
+Emami Paper Mills Limited,EMAMIPAP,533208.0
+Emami Realty Limited,EMAMIREAL,533218.0
+Embassy Developments Limited,EMBDL,532832.0
+Emcure Pharmaceuticals Limited,EMCURE,544210.0
+Electronics Mart India Limited,EMIL,543626.0
+Emkay Global Financial Services Limited,EMKAY,Not Available
+Emmbi Industries Limited,EMMBI,533161.0
+EMS Limited,EMSLIMITED,543983.0
+eMudhra Limited,EMUDHRA,543533.0
+Endurance Technologies Limited,ENDURANCE,540153.0
+Energy Development Company Limited,ENERGYDEV,532219.0
+Engineers India Limited,ENGINERSIN,532178.0
+Entertainment Network (India) Limited,ENIL,532700.0
+Siemens Energy India Limited,ENRIN,544390.0
+Entero Healthcare Solutions Limited,ENTERO,Not Available
+EPACK Durable Limited,EPACK,544095.0
+Epigral Limited,EPIGRAL,543332.0
+EPL Limited,EPL,500135.0
+Equippp Social Impact Technologies Limited,EQUIPPP,Not Available
+Equitas Small Finance Bank Limited,EQUITASBNK,Not Available
+Eris Lifesciences Limited,ERIS,540596.0
+Esab India Limited,ESABINDIA,500133.0
+ESAF Small Finance Bank Limited,ESAFSFB,544020.0
+Escorts Kubota Limited,ESCORTS,500495.0
+Essar Shipping Limited,ESSARSHPNG,533704.0
+Integra Essentia Limited,ESSENTIA,535958.0
+Ester Industries Limited,ESTER,500136.0
+ETERNAL LIMITED,ETERNAL,543320.0
+Ethos Limited,ETHOSLTD,543532.0
+Eureka Forbes Limited,EUREKAFORB,543482.0
+Eurotex Industries and Exports Limited,EUROTEXIND,Not Available
+Eveready Industries India Limited,EVEREADY,531508.0
+Everest Industries Limited,EVERESTIND,508906.0
+Excel Realty N Infra Limited,EXCEL,533090.0
+Excel Industries Limited,EXCELINDUS,500650.0
+Exicom Tele-Systems Limited,EXICOM,544133.0
+Exicom Tele-Systems Limited,EXICOM,751011.0
+Exicom Tele-Systems Ltd-RE,EXICOM-RE,Not Available
+Exide Industries Limited,EXIDEIND,500086.0
+Expleo Solutions Limited,EXPLEOSOL,533121.0
+Exxaro Tiles Limited,EXXARO,543327.0
+Fertilizers and Chemicals Travancore Limited,FACT,Not Available
+Fairchem Organics Limited,FAIRCHEMOR,543252.0
+Faze Three Limited,FAZE3Q,530079.0
+Fineotex Chemical Limited,FCL,533333.0
+FCS Software Solutions Limited,FCSSOFT,532666.0
+FDC Limited,FDC,531599.0
+The Federal Bank  Limited,FEDERALBNK,Not Available
+Fedbank Financial Services Limited,FEDFINA,Not Available
+Future Enterprises Limited,FEL,523574.0
+Future Enterprises Limited,FEL,570002.0
+Future Enterprises Limited,FELDVR,523574.0
+Future Enterprises Limited,FELDVR,570002.0
+Fiberweb (India) Limited,FIBERWEB,507910.0
+Fiem Industries Limited,FIEMIND,532768.0
+Filatex India Limited,FILATEX,526227.0
+Filatex Fashions Limited,FILATFASH,532022.0
+Finolex Cables Limited,FINCABLES,500144.0
+Fine Organic Industries Limited,FINEORG,Not Available
+Fino Payments Bank Limited,FINOPB,543386.0
+Finolex Industries Limited,FINPIPE,500940.0
+Brainbees Solutions Limited,FIRSTCRY,544226.0
+Fischer Medical Ventures Limited,FISCHER,Not Available
+Five-Star Business Finance Limited,FIVESTAR,543663.0
+Flair Writing Industries Limited,FLAIR,Not Available
+Flexituff Ventures International Limited,FLEXITUFF,Not Available
+Gujarat Fluorochemicals Limited,FLUOROCHEM,Not Available
+Federal-Mogul Goetze (India) Limited.,FMGOETZE,Not Available
+Future Market Networks Limited,FMNL,533296.0
+Focus Lighting and Fixtures Limited,FOCUS,Not Available
+Foods & Inns Limited,FOODSIN,507552.0
+FORCE MOTORS LTD,FORCEMOT,500033.0
+Fortis Healthcare Limited,FORTIS,532843.0
+Foseco India Limited,FOSECOIND,500150.0
+Firstsource Solutions Limited,FSL,532809.0
+Fusion Finance Limited,FUSION,543652.0
+Fusion Finance Limited,FUSION,890214.0
+Gabriel India Limited,GABRIEL,505714.0
+Gujarat Ambuja Exports Limited,GAEL,524226.0
+GAIL (India) Limited,GAIL,532155.0
+Gala Precision Engineering Limited,GALAPREC,Not Available
+Galaxy Surfactants Limited,GALAXYSURF,540935.0
+Gallantt Ispat Limited,GALLANTT,532726.0
+Gandhar Oil Refinery (India) Limited,GANDHAR,Not Available
+Gandhi Special Tubes Limited,GANDHITUBE,513108.0
+Ganesha Ecosphere Limited,GANECOS,514167.0
+Ganesh Benzoplast Limited,GANESHBE,500153.0
+Ganesh Housing Corporation Limited,GANESHHOUC,526367.0
+Ganga Forging Limited,GANGAFORGE,Not Available
+Ganges Securities Limited,GANGESSECU,540647.0
+Garware Technical Fibres Limited,GARFIBRES,Not Available
+Garuda Construction and Engineering Limited,GARUDA,Not Available
+GACM Technologies Limited,GATECH,531723.0
+GACM Technologies Limited,GATECHDVR,531723.0
+Gateway Distriparks Limited,GATEWAY,543489.0
+Gayatri Highways Limited,GAYAHWS,541546.0
+Gayatri Projects Limited,GAYAPROJ,532767.0
+GeeCee Ventures Limited,GEECEE,532764.0
+Geekay Wires Limited,GEEKAYWIRE,Not Available
+Generic Engineering Construction and Projects Limited,GENCON,Not Available
+Genesys International Corporation Limited,GENESYS,Not Available
+Genus Paper & Boards Limited,GENUSPAPER,538961.0
+Genus Power Infrastructures Limited,GENUSPOWER,Not Available
+Geojit Financial Services Limited,GEOJITFSL,Not Available
+GE Power India Limited,GEPIL,532309.0
+The Great Eastern Shipping Company Limited,GESHIP,Not Available
+GFL Limited,GFLLIMITED,500173.0
+GHCL Limited,GHCL,500171.0
+GHCL Textiles Limited,GHCLTEXTIL,543918.0
+GIC Housing Finance Limited,GICHSGFIN,511676.0
+General Insurance Corporation of India,GICRE,Not Available
+Gillanders Arbuthnot & Company Limited,GILLANDERS,Not Available
+Gillette India Limited,GILLETTE,507815.0
+Ginni Filaments Limited,GINNIFILA,590025.0
+Gujarat Industries Power Company Limited,GIPCL,Not Available
+GKW Limited,GKWLIMITED,Not Available
+Gland Pharma Limited,GLAND,543245.0
+GlaxoSmithKline Pharmaceuticals Limited,GLAXO,Not Available
+Glenmark Pharmaceuticals Limited,GLENMARK,532296.0
+Gujarat Lease Financing Limited,GLFL,500174.0
+Global Education Limited,GLOBAL,Not Available
+Globale Tessile Limited,GLOBALE,544234.0
+Global Vectra Helicorp Limited,GLOBALVECT,532773.0
+Globe Textiles (India) Limited,GLOBE,Not Available
+Globe Civil Projects Limited,GLOBECIVIL,544424.0
+Globus Spirits Limited,GLOBUSSPR,533104.0
+Gloster Limited,GLOSTERLTD,542351.0
+GM Breweries Limited,GMBREW,Not Available
+Gujarat Mineral Development Corporation Limited,GMDCLTD,Not Available
+GMM Pfaudler Limited,GMMPFAUDLR,505255.0
+GMR AIRPORTS LIMITED,GMRAIRPORT,532754.0
+GMR Power and Urban Infra Limited,GMRP&UI,Not Available
+GNA Axles Limited,GNA,Not Available
+Gujarat Narmada Valley Fertilizers and Chemicals Limited,GNFC,Not Available
+Goa Carbon Limited,GOACARBON,509567.0
+GOCL Corporation Limited,GOCLCORP,506480.0
+Go Fashion (India) Limited,GOCOLORS,543401.0
+Godavari Biorefineries Limited,GODAVARIB,544279.0
+Godfrey Phillips India Limited,GODFRYPHLP,500163.0
+Godha Cabcon & Insulation Limited,GODHA,Not Available
+Go Digit General Insurance Limited,GODIGIT,Not Available
+Godrej Agrovet Limited,GODREJAGRO,540743.0
+Godrej Consumer Products Limited,GODREJCP,532424.0
+Godrej Industries Limited,GODREJIND,500164.0
+Godrej Properties Limited,GODREJPROP,533150.0
+Goenka Diamond and Jewels Limited,GOENKA,533189.0
+Gokaldas Exports Limited,GOKEX,532630.0
+Gokul Refoils and Solvent Limited,GOKUL,532980.0
+Gokul Agro Resources Limited,GOKULAGRO,539725.0
+Golden Tobacco Limited,GOLDENTOBC,500151.0
+Goldiam International Limited,GOLDIAM,526729.0
+AION-TECH SOLUTIONS LIMITED,GOLDTECH,531439.0
+Goodluck India Limited,GOODLUCK,530655.0
+Gopal Snacks Limited,GOPAL,544140.0
+Goyal Aluminiums Limited,GOYALALUM,541152.0
+Godawari Power And Ispat limited,GPIL,532734.0
+Gujarat Pipavav Port Limited,GPPL,533248.0
+GPT Healthcare Limited,GPTHEALTH,544131.0
+GPT Infraprojects Limited,GPTINFRA,533761.0
+Granules India Limited,GRANULES,532482.0
+Graphite India Limited,GRAPHITE,509488.0
+Grasim Industries Limited,GRASIM,500300.0
+Gravita India Limited,GRAVITA,533282.0
+Greaves Cotton Limited,GREAVESCOT,501455.0
+Greenlam Industries Limited,GREENLAM,538979.0
+Greenpanel Industries Limited,GREENPANEL,542857.0
+Greenply Industries Limited,GREENPLY,526797.0
+Orient Green Power Company Limited,GREENPOWER,533263.0
+Grindwell Norton Limited,GRINDWELL,506076.0
+G R Infraprojects Limited,GRINFRA,543317.0
+GRM Overseas Limited,GRMOVER,531449.0
+The Grob Tea Company Limited,GROBTEA,Not Available
+GRP Limited,GRPLTD,509152.0
+Garden Reach Shipbuilders & Engineers Limited,GRSE,Not Available
+Garware Hi-Tech Films Limited,GRWRHITECH,500655.0
+Gujarat State Fertilizers & Chemicals Limited,GSFC,Not Available
+Global Surfaces Limited,GSLSU,543829.0
+Gujarat State Petronet Limited,GSPL,532702.0
+GSS Infotech Limited,GSS,532951.0
+G-TEC JAINX EDUCATION LIMITED,GTECJAINX,Not Available
+GTL Limited,GTL,500160.0
+GTL Infrastructure Limited,GTLINFRA,532775.0
+GTPL Hathway Limited,GTPL,540602.0
+Gufic Biosciences Limited,GUFICBIO,509079.0
+Gujarat Alkalies and Chemicals Limited,GUJALKALI,Not Available
+Gujarat Apollo Industries Limited,GUJAPOLLO,522217.0
+Gujarat Gas Limited,GUJGASLTD,539336.0
+Gujarat Raffia Industries Limited,GUJRAFFIA,523836.0
+Gujarat Themis Biosyn Limited,GUJTHEM,506879.0
+Gulf Oil Lubricants India Limited,GULFOILLUB,538567.0
+GP Petroleums Limited,GULFPETRO,532543.0
+Gulshan Polyols Limited,GULPOLY,532457.0
+GVK Power & Infrastructure Limited,GVKPIL,532708.0
+GVP Infotech Limited,GVPTECH,Not Available
+GVP Infotech Limited-RE,GVPTECH-RE,Not Available
+GE Vernova T&D India Limited,GVT&D,522275.0
+Hindustan Aeronautics Limited,HAL,541154.0
+Happiest Minds Technologies Limited,HAPPSTMNDS,Not Available
+Happy Forgings Limited,HAPPYFORGE,544057.0
+Hardwyn India Limited,HARDWYN,541276.0
+Hariom Pipe Industries Limited,HARIOMPIPE,543517.0
+Harrisons  Malayalam Limited,HARRMALAYA,500467.0
+Harsha Engineers International Limited,HARSHA,543600.0
+Hathway Cable & Datacom Limited,HATHWAY,533162.0
+Hatsun Agro Product Limited,HATSUN,531531.0
+Havells India Limited,HAVELLS,517354.0
+Sri Havisha Hospitality and Infrastructure Limited,HAVISHA,Not Available
+HBL Engineering Limited,HBLENGINE,517271.0
+HB Stockholdings Limited,HBSL,532216.0
+Hindustan Construction Company Limited,HCC,Not Available
+Healthcare Global Enterprises Limited,HCG,539787.0
+HCL Infosystems Limited,HCL-INSYS,500179.0
+HCL Technologies Limited,HCLTECH,532281.0
+HDB Financial Services Limited,HDBFS,544429.0
+HDFC Asset Management Company Limited,HDFCAMC,541729.0
+HDFC Bank Limited,HDFCBANK,500180.0
+HDFC Life Insurance Company Limited,HDFCLIFE,Not Available
+Heads UP Ventures Limited,HEADSUP,540210.0
+HEC Infra Projects Limited,HECPROJECT,Not Available
+HEG Limited,HEG,509631.0
+HeidelbergCement India Limited,HEIDELBERG,500292.0
+Hemisphere Properties India Limited,HEMIPROP,Not Available
+Heranba Industries Limited,HERANBA,543266.0
+Hercules Hoists Limited,HERCULES,505720.0
+Heritage Foods Limited,HERITGFOOD,519552.0
+Hero MotoCorp Limited,HEROMOTOCO,500182.0
+Hester Biosciences Limited,HESTERBIO,524669.0
+Heubach Colorants India Limited,HEUBACHIND,Not Available
+Hexa Tradex Limited,HEXATRADEX,534328.0
+Hexaware Technologies Limited,HEXT,544362.0
+HFCL Limited,HFCL,500183.0
+H.G. Infra Engineering Limited,HGINFRA,541019.0
+Hinduja Global Solutions Limited,HGS,532859.0
+Hikal Limited,HIKAL,524735.0
+Hilton Metal Forging Limited,HILTON,532847.0
+Himatsingka Seide Limited,HIMATSEIDE,514043.0
+Hindalco Industries Limited,HINDALCO,500440.0
+Hindustan Composites Limited,HINDCOMPOS,509635.0
+Hindcon Chemicals Limited,HINDCON,Not Available
+Hindustan Copper Limited,HINDCOPPER,513599.0
+Hindustan Motors Limited,HINDMOTORS,500500.0
+Hindustan Oil Exploration Company Limited,HINDOILEXP,Not Available
+Hindustan Petroleum Corporation Limited,HINDPETRO,Not Available
+Hindustan Unilever Limited,HINDUNILVR,500696.0
+Hindware Home Innovation Limited,HINDWAREAP,Not Available
+Hindustan Zinc Limited,HINDZINC,500188.0
+Hind Rectifiers Limited,HIRECT,504036.0
+Hisar Metal Industries Limited,HISARMETAL,590018.0
+Hi-Tech Pipes Limited,HITECH,543411.0
+Hitech Corporation Limited,HITECHCORP,526217.0
+The Hi-Tech Gears Limited,HITECHGEAR,522073.0
+HLE Glascoat Limited,HLEGLAS,522215.0
+HLV LIMITED,HLVLTD,500193.0
+HMA Agro Industries Limited,HMAAGRO,543929.0
+HMT Limited,HMT,500191.0
+Hindustan Media Ventures Limited,HMVL,533217.0
+Hindustan Foods Limited,HNDFDS,519126.0
+Home First Finance Company India Limited,HOMEFIRST,Not Available
+Honasa Consumer Limited,HONASA,544014.0
+Honeywell Automation India Limited,HONAUT,517174.0
+Honda India Power Products Limited,HONDAPOWER,Not Available
+HOV Services Limited,HOVS,532761.0
+HP Adhesives Limited,HPAL,543433.0
+Hindprakash Industries Limited,HPIL,543645.0
+HPL Electric & Power Limited,HPL,540136.0
+Himadri Speciality Chemical Limited,HSCL,Not Available
+HT Media Limited,HTMEDIA,532662.0
+Hubtown Limited,HUBTOWN,532799.0
+Housing & Urban Development Corporation Limited,HUDCO,Not Available
+Huhtamaki India Limited,HUHTAMAKI,509820.0
+Hybrid Financial Services Limited,HYBRIDFIN,Not Available
+Hyundai Motor India Limited,HYUNDAI,544274.0
+ICDS Limited,ICDSLTD,511194.0
+Ice Make Refrigeration Limited,ICEMAKE,Not Available
+ICICI Bank Limited,ICICIBANK,532174.0
+ICICI Lombard General Insurance Company Limited,ICICIGI,Not Available
+ICICI Prudential Life Insurance Company Limited,ICICIPRULI,Not Available
+Indo Count Industries Limited,ICIL,521016.0
+ICRA Limited,ICRA,532835.0
+IDBI Bank Limited,IDBI,500116.0
+Vodafone Idea Limited,IDEA,532822.0
+Ideaforge Technology Limited,IDEAFORGE,543932.0
+IDFC First Bank Limited,IDFCFIRSTB,539437.0
+Indiabulls Enterprises Limited,IEL,543715.0
+Indian Energy Exchange Limited,IEX,540750.0
+IFB Agro Industries Limited,IFBAGRO,507438.0
+IFB Industries Limited,IFBIND,505726.0
+IFCI Limited,IFCI,500106.0
+IFGL Refractories Limited,IFGLEXPOR,540774.0
+Igarashi Motors India Limited,IGARASHI,517380.0
+Indogulf Cropsciences Limited,IGCL,544432.0
+International Gemmological Institute (India) Limited,IGIL,Not Available
+Indraprastha Gas Limited,IGL,532514.0
+IG Petrochemicals Limited,IGPL,Not Available
+IIFL Finance Limited,IIFL,532636.0
+IIFL Capital Services Limited,IIFLCAPS,542773.0
+Industrial Investment Trust Limited,IITL,Not Available
+IKIO Technologies Limited,IKIO,543923.0
+Inventurus Knowledge Solutions Limited,IKS,544309.0
+IL&FS Engineering and Construction Company Limited,IL&FSENGG,Not Available
+IL&FS Transportation Networks Limited,IL&FSTRANS,533177.0
+Imagicaaworld Entertainment Limited,IMAGICAA,Not Available
+Indian Metals & Ferro Alloys Limited,IMFA,Not Available
+India Motor Parts and Accessories Limited,IMPAL,Not Available
+Impex Ferro Tech Limited,IMPEXFERRO,532614.0
+INCREDIBLE INDUSTRIES LIMITED,INCREDIBLE,538365.0
+Indbank Merchant Banking Services Limited,INDBANK,Not Available
+Indegene Limited,INDGN,544172.0
+The Indian Hotels Company Limited,INDHOTEL,Not Available
+The India Cements Limited,INDIACEM,Not Available
+India Glycols Limited,INDIAGLYCO,500201.0
+Indiamart Intermesh Limited,INDIAMART,542726.0
+Indian Bank,INDIANB,532814.0
+Indian Card Clothing Company Limited,INDIANCARD,Not Available
+Indian Hume Pipe Company Limited,INDIANHUME,Not Available
+India Shelter Finance Corporation Limited,INDIASHLTR,Not Available
+InterGlobe Aviation Limited,INDIGO,539448.0
+Indigo Paints Limited,INDIGOPNTS,543258.0
+India Nippon Electricals Limited,INDNIPPON,532240.0
+Indo Amines Limited,INDOAMIN,524648.0
+Indo Borax & Chemicals Limited,INDOBORAX,524342.0
+Indoco Remedies Limited,INDOCO,532612.0
+Indo Farm Equipment Limited,INDOFARM,544328.0
+Indo Rama Synthetics (India) Limited,INDORAMA,Not Available
+IndoStar Capital Finance Limited,INDOSTAR,Not Available
+Indo Tech Transformers Limited,INDOTECH,532717.0
+Indo Thai Securities Limited,INDOTHAI,533676.0
+Indo Us Biotech Limited,INDOUS,541304.0
+Indowind Energy Limited,INDOWIND,532894.0
+Indraprastha Medical Corporation Limited,INDRAMEDCO,Not Available
+Ind-Swift Laboratories Limited,INDSWFTLAB,532305.0
+Ind-Swift Limited,INDSWFTLTD,524652.0
+Indian Terrain Fashions Limited,INDTERRAIN,533329.0
+IndusInd Bank Limited,INDUSINDBK,532187.0
+Indus Towers Limited,INDUSTOWER,534816.0
+Infibeam Avenues Limited,INFIBEAM,539807.0
+InfoBeans Technologies Limited,INFOBEAN,543644.0
+Infosys Limited,INFY,500209.0
+Ingersoll Rand (India) Limited,INGERRAND,Not Available
+Innova Captab Limited,INNOVACAP,544067.0
+Innovana Thinklabs Limited,INNOVANA,544302.0
+Inox Green Energy Services Limited,INOXGREEN,Not Available
+INOX India Limited,INOXINDIA,544046.0
+Inox Wind Limited,INOXWIND,539083.0
+Insecticides (India) Limited,INSECTICID,532851.0
+Inspirisys Solutions Limited,INSPIRISYS,532774.0
+Intellect Design Arena Limited,INTELLECT,538835.0
+Intense Technologies Limited,INTENTECH,532326.0
+Interarch Building Solutions Limited,INTERARCH,Not Available
+International Conveyors Limited,INTLCONV,509709.0
+Inventure Growth & Securities Limited,INVENTURE,533506.0
+Indian Overseas Bank,IOB,532388.0
+Indian Oil Corporation Limited,IOC,530965.0
+IOL Chemicals and Pharmaceuticals Limited,IOLCP,Not Available
+ION Exchange (India) Limited,IONEXCHANG,500214.0
+IPCA Laboratories Limited,IPCALAB,524494.0
+India Pesticides Limited,IPL,543311.0
+IRB Infrastructure Developers Limited,IRB,532947.0
+Ircon International Limited,IRCON,541956.0
+Indian Railway Catering And Tourism Corporation Limited,IRCTC,Not Available
+Indian Renewable Energy Development Agency Limited,IREDA,Not Available
+Indian Railway Finance Corporation Limited,IRFC,Not Available
+Iris Business Services Limited,IRIS,540735.0
+Iris Clothings Limited,IRISDOREME,Not Available
+IRM Energy Limited,IRMENERGY,544004.0
+Intrasoft Technologies Limited,ISFT,533181.0
+Isgec Heavy Engineering Limited,ISGEC,533033.0
+Ishan Dyes and Chemicals Limited,ISHANCH,Not Available
+ITC Limited,ITC,500875.0
+ITC Hotels Limited,ITCHOTELS,544325.0
+India Tourism Development Corporation Limited,ITDC,Not Available
+ITD Cementation India Limited,ITDCEM,509496.0
+ITI Limited,ITI,523610.0
+IL&FS Investment Managers Limited,IVC,511208.0
+IVP Limited,IVP,507580.0
+Le Travenues Technology Limited,IXIGO,Not Available
+IZMO Limited,IZMO,532341.0
+The Jammu & Kashmir Bank Limited,J&KBANK,Not Available
+Jagran Prakashan Limited,JAGRAN,532705.0
+Jagsonpal Pharmaceuticals Limited,JAGSNPHARM,507789.0
+Jai Balaji Industries Limited,JAIBALAJI,532976.0
+Jai Corp Limited,JAICORPLTD,512237.0
+Nandani Creation Limited,JAIPURKURT,Not Available
+Jamna Auto Industries Limited,JAMNAAUTO,520051.0
+Jash Engineering Limited,JASH,544402.0
+Jayant Agro Organics Limited,JAYAGROGN,Not Available
+Jay Bharat Maruti Limited,JAYBARMARU,520066.0
+Jayaswal Neco Industries Limited,JAYNECOIND,522285.0
+Jayshree Tea & Industries Limited,JAYSREETEA,Not Available
+JB Chemicals & Pharmaceuticals Limited,JBCHEPHARM,Not Available
+JBM Auto Limited,JBMA,532605.0
+Johnson Controls - Hitachi Air Conditioning India Limited,JCHAC,Not Available
+Jet Freight Logistics Limited,JETFREIGHT,543420.0
+J.G.Chemicals Limited,JGCHEM,544138.0
+JHS Svendgaard Laboratories Limited,JHS,Not Available
+Jindal Photo Limited,JINDALPHOT,532624.0
+Jindal Poly Films Limited,JINDALPOLY,500227.0
+Jindal Saw Limited,JINDALSAW,500378.0
+Jindal Steel & Power Limited,JINDALSTEL,532286.0
+Jindal Drilling And Industries Limited,JINDRILL,Not Available
+Jindal Worldwide Limited,JINDWORLD,531543.0
+Jio Financial Services Limited,JIOFIN,543940.0
+Jain Irrigation Systems Limited,JISLDVREQS,500219.0
+Jain Irrigation Systems Limited,JISLDVREQS,570004.0
+Jain Irrigation Systems Limited,JISLJALEQS,500219.0
+Jain Irrigation Systems Limited,JISLJALEQS,570004.0
+JITF Infralogistics Limited,JITFINFRA,540311.0
+JK Cement Limited,JKCEMENT,Not Available
+J.Kumar Infraprojects Limited,JKIL,532940.0
+JK Lakshmi Cement Limited,JKLAKSHMI,500380.0
+JK Paper Limited,JKPAPER,532162.0
+JK Tyre & Industries Limited,JKTYRE,530007.0
+Jupiter Life Line Hospitals Limited,JLHL,Not Available
+Jullundur Motor Agency (Delhi) Limited,JMA,Not Available
+JM Financial Limited,JMFINANCIL,523405.0
+JNK India Limited,JNKINDIA,544167.0
+Jocil Limited,JOCIL,Not Available
+Jindal Poly Investment and Finance Company Limited,JPOLYINVST,Not Available
+Jaiprakash Power Ventures Limited,JPPOWER,Not Available
+Jana Small Finance Bank Limited,JSFB,Not Available
+Jindal Stainless Limited,JSL,532508.0
+JSW Energy Limited,JSWENERGY,533148.0
+JSW Holdings Limited,JSWHL,532642.0
+JSW Infrastructure Limited,JSWINFRA,543994.0
+JSW Steel Limited,JSWSTEEL,500228.0
+Jtekt India Limited,JTEKTINDIA,520057.0
+JTL INDUSTRIES LIMITED,JTLIND,534600.0
+Jubilant Agri and Consumer Products Limited,JUBLCPL,Not Available
+Jubilant Foodworks Limited,JUBLFOOD,533155.0
+Jubilant Ingrevia Limited,JUBLINGREA,543271.0
+Jubilant Pharmova Limited,JUBLPHARMA,530019.0
+Juniper Hotels Limited,JUNIPER,544129.0
+Just Dial Limited,JUSTDIAL,535648.0
+Jupiter Wagons Limited,JWL,533272.0
+Jyothy Labs Limited,JYOTHYLAB,532926.0
+Jyoti CNC Automation Limited,JYOTICNC,544081.0
+Jyoti Structures Limited,JYOTISTRUC,513250.0
+Kabra Extrusion Technik Limited,KABRAEXTRU,Not Available
+Kajaria Ceramics Limited,KAJARIACER,500233.0
+Kakatiya Cement Sugar & Industries Limited,KAKATCEM,Not Available
+Sai Silks (Kalamandir) Limited,KALAMANDIR,543989.0
+Kalpataru Limited,KALPATARU,544423.0
+Kalyani Commercials Limited,KALYANI,Not Available
+Kalyani Forge Limited,KALYANIFRG,513509.0
+Kalyan Jewellers India Limited,KALYANKJIL,543278.0
+Kamat Hotels (I) Limited,KAMATHOTEL,Not Available
+Kamdhenu Limited,KAMDHENU,532741.0
+Kamdhenu Ventures Limited,KAMOPAINTS,543747.0
+Kanani Industries Limited,KANANIIND,506184.0
+Kanoria Chemicals & Industries Limited,KANORICHEM,506525.0
+Kanpur Plastipack Limited,KANPRPLA,507779.0
+Kansai Nerolac Paints Limited,KANSAINER,500165.0
+Kapston Services Limited,KAPSTON,Not Available
+Karma Energy Limited,KARMAENG,533451.0
+Karur Vysya Bank Limited,KARURVYSYA,590003.0
+Kaushalya Infrastructure Development Corporation Limited,KAUSHALYA,Not Available
+Kavveri Defence & Wireless Technologies Limited,KAVDEFENCE,Not Available
+Kaya Limited,KAYA,539276.0
+Kaynes Technology India Limited,KAYNES,Not Available
+KCP Limited,KCP,Not Available
+KCP Sugar and Industries Corporation Limited,KCPSUGIND,Not Available
+KDDL Limited,KDDL,532054.0
+KEC International Limited,KEC,532714.0
+Kirloskar Electric Company Limited,KECL,533193.0
+DSJ Keep Learning Limited,KEEPLEARN,526677.0
+KEI Industries Limited,KEI,517569.0
+Kellton Tech Solutions Limited,KELLTONTEC,519602.0
+Kernex Microsystems (India) Limited,KERNEX,Not Available
+Kesoram Industries Limited,KESORAMIND,502937.0
+Keynote Financial Services Limited,KEYFINSERV,Not Available
+Kfin Technologies Limited,KFINTECH,543720.0
+Khadim India Limited,KHADIM,540775.0
+Khaitan Chemicals & Fertilizers Limited,KHAICHEM,Not Available
+Khaitan (India) Limited,KHAITANLTD,590068.0
+Khandwala Securities Limited,KHANDSE,531892.0
+Kalyani Investment Company Limited,KICL,533302.0
+Kilitch Drugs (India) Limited,KILITCH,524500.0
+Krishna Institute of Medical Sciences Limited,KIMS,Not Available
+Kingfa Science & Technology (India) Limited,KINGFA,Not Available
+KIOCL Limited,KIOCL,540680.0
+Kiri Industries Limited,KIRIINDUS,532967.0
+Kirloskar Brothers Limited,KIRLOSBROS,500241.0
+Kirloskar Oil Engines Limited,KIRLOSENG,533293.0
+Kirloskar Industries Limited,KIRLOSIND,500243.0
+Kirloskar Pneumatic Company Limited,KIRLPNU,Not Available
+Kitex Garments Limited,KITEX,521248.0
+Kewal Kiran Clothing Limited,KKCL,532732.0
+Knowledge Marine & Engineering Works Limited,KMEW,Not Available
+K.M.Sugar Mills Limited,KMSUGAR,532673.0
+KNR Constructions Limited,KNRCON,532942.0
+Kohinoor Foods Limited,KOHINOOR,512559.0
+Kokuyo Camlin Limited,KOKUYOCMLN,523207.0
+Kolte - Patil Developers Limited,KOLTEPATIL,Not Available
+Kopran Limited,KOPRAN,524280.0
+Kotak Mahindra Bank Limited,KOTAKBANK,500247.0
+Kothari Sugars And Chemicals Limited,KOTARISUG,Not Available
+Kothari Petrochemicals Limited,KOTHARIPET,Not Available
+Kothari Products Limited,KOTHARIPRO,530299.0
+K.P. Energy Limited,KPEL,539686.0
+KPI Green Energy Limited,KPIGREEN,542323.0
+Kalpataru Projects International Limited,KPIL,Not Available
+KPIT Technologies Limited,KPITTECH,542651.0
+K.P.R. Mill Limited,KPRMILL,Not Available
+KRBL Limited,KRBL,530813.0
+Krebs Biochemicals and Industries Limited,KREBSBIO,Not Available
+Kridhan Infra Limited,KRIDHANINF,533482.0
+Krishana Phoschem Limited,KRISHANA,Not Available
+Krishival Foods Limited,KRISHIVAL,544416.0
+Kriti Industries (India) Limited,KRITI,526423.0
+Kritika Wires Limited,KRITIKA,Not Available
+Kriti Nutrients Limited,KRITINUT,533210.0
+KRN Heat Exchanger and Refrigeration Limited,KRN,Not Available
+Kronox Lab Sciences Limited,KRONOX,544187.0
+Kross Limited,KROSS,544253.0
+Krsnaa Diagnostics Limited,KRSNAA,543328.0
+Krystal Integrated Services Limited,KRYSTAL,Not Available
+Ksb Limited,KSB,500249.0
+Kaveri Seed Company Limited,KSCL,532899.0
+Kshitij Polyline Limited,KSHITIJPOL,Not Available
+Kalyani Steels Limited,KSL,500235.0
+Ksolves India Limited,KSOLVES,543599.0
+The Karnataka Bank Limited,KTKBANK,Not Available
+Kuantum Papers Limited,KUANTUM,532937.0
+Lagnam Spintex Limited,LAGNAM,Not Available
+Lakshmi Precision Screws Limited,LAKPRE,506079.0
+Lorenzini Apparels Limited,LAL,540952.0
+Dr. Lal Path Labs Ltd.,LALPATHLAB,Not Available
+Lambodhara Textiles Limited,LAMBODHARA,590075.0
+Lancor Holdings Limited,LANCORHOL,509048.0
+Landmark Cars Limited,LANDMARK,543714.0
+La Opala RG Limited,LAOPALA,526947.0
+Lasa Supergenerics Limited,LASA,540702.0
+Latent View Analytics Limited,LATENTVIEW,543398.0
+Latteys Industries Limited,LATTEYS,Not Available
+Laurus Labs Limited,LAURUSLABS,540222.0
+Laxmi Cotspin Limited,LAXMICOT,Not Available
+Laxmi Dental Limited,LAXMIDENTL,544339.0
+LCC Infotech Limited,LCCINFOTEC,532019.0
+Lemon Tree Hotels Limited,LEMONTREE,541233.0
+Lexus Granito (India) Limited,LEXUS,Not Available
+Lakshmi Finance & Industrial Corporation Limited,LFIC,Not Available
+LG Balakrishnan & Bros Limited,LGBBROSLTD,Not Available
+Laxmi Goldorna House Limited,LGHL,Not Available
+Libas Consumer Products Limited,LIBAS,Not Available
+Liberty Shoes Limited,LIBERTSHOE,526596.0
+LIC Housing Finance Limited,LICHSGFIN,500253.0
+Life Insurance Corporation Of India,LICI,Not Available
+Likhitha Infrastructure Limited,LIKHITHA,Not Available
+Linc Limited,LINC,531241.0
+Lincoln Pharmaceuticals Limited,LINCOLN,531633.0
+Linde India Limited,LINDEINDIA,523457.0
+LLOYDS ENGINEERING WORKS LIMITED,LLOYDSENGG,Not Available
+Lloyds Enterprises Limited,LLOYDSENT,512463.0
+Lloyds Metals And Energy Limited,LLOYDSME,512455.0
+LMW Limited,LMW,500252.0
+Lodha Developers Limited,LODHA,543287.0
+Lokesh Machines Limited,LOKESHMACH,532740.0
+Lords Chloro Alkali Limited,LORDSCHLO,500284.0
+Lotus Eye Hospital and Institute Limited,LOTUSEYE,Not Available
+Lovable Lingerie Limited,LOVABLE,533343.0
+Loyal Textile Mills Limited,LOYALTEX,514036.0
+Landmark Property Development Company Limited,LPDC,Not Available
+Larsen & Toubro Limited,LT,500510.0
+L&T Finance Limited,LTF,533519.0
+LT Foods Limited,LTFOODS,532783.0
+LTIMindtree Limited,LTIM,540005.0
+L&T Technology Services Limited,LTTS,Not Available
+Lumax Industries Limited,LUMAXIND,517206.0
+Lumax Auto Technologies Limited,LUMAXTECH,532796.0
+Lupin Limited,LUPIN,500257.0
+Lux Industries Limited,LUXIND,539542.0
+Laxmi Organic Industries Limited,LXCHEM,Not Available
+Lyka Labs Limited,LYKALABS,500259.0
+Lypsa Gems & Jewellery Limited,LYPSAGEMS,534532.0
+Mahindra & Mahindra Limited,M&M,500520.0
+Mahindra & Mahindra Financial Services Limited,M&MFIN,Not Available
+Maan Aluminium Limited,MAANALU,532906.0
+Macpower CNC Machines Limited,MACPOWER,Not Available
+Madhav Marbles and Granites Limited,MADHAV,515093.0
+Madhucon Projects Limited,MADHUCON,531497.0
+Madras Fertilizers Limited,MADRASFERT,Not Available
+Magadh Sugar & Energy Limited,MAGADSUGAR,540650.0
+Magnum Ventures Limited,MAGNUM,532896.0
+Bank of Maharashtra,MAHABANK,532525.0
+Maha Rashtra Apex Corporation Limited,MAHAPEXLTD,Not Available
+Mahamaya Steel Industries Limited,MAHASTEEL,513554.0
+Mahindra EPC Irrigation Limited,MAHEPC,Not Available
+Maheshwari Logistics Limited,MAHESHWARI,Not Available
+Mahindra Lifespace Developers Limited,MAHLIFE,532313.0
+Mahindra Logistics Limited,MAHLOG,540768.0
+Maharashtra Scooters Limited,MAHSCOOTER,500266.0
+Maharashtra Seamless Limited,MAHSEAMLES,500265.0
+Maithan Alloys Limited,MAITHANALL,590078.0
+Mallcom (India) Limited,MALLCOM,539400.0
+Malu Paper Mills Limited,MALUPAPER,532728.0
+Mamata Machinery Limited,MAMATA,544318.0
+Manaksia Aluminium Company Limited,MANAKALUCO,539045.0
+Manaksia Coated Metals & Industries Limited,MANAKCOAT,Not Available
+Manaksia Limited,MANAKSIA,532932.0
+Manaksia Steels Limited,MANAKSTEEL,539044.0
+Manali Petrochemicals Limited,MANALIPETC,Not Available
+Manappuram Finance Limited,MANAPPURAM,531213.0
+Manba Finance Limited,MANBA,544262.0
+Mangal Credit and Fincorp Limited,MANCREDIT,505850.0
+Mangalam Drugs And Organics Limited,MANGALAM,532637.0
+Mangalore Chemicals & Fertilizers Limited,MANGCHEFER,Not Available
+Mangalam Cement Limited,MANGLMCEM,502157.0
+Man Industries (India) Limited,MANINDS,513269.0
+Man Infraconstruction Limited,MANINFRA,533169.0
+Mankind Pharma Limited,MANKIND,543904.0
+Manomay Tex India Limited,MANOMAY,540396.0
+Manorama Industries Limited,MANORAMA,541974.0
+Mangalam Organics Limited,MANORG,514418.0
+Manugraph India Limited,MANUGRAPH,505324.0
+Vedant Fashions Limited,MANYAVAR,543463.0
+C.E. Info Systems Limited,MAPMYINDIA,543425.0
+Maral Overseas Limited,MARALOVER,521018.0
+Marathon Nextgen Realty Limited,MARATHON,503101.0
+Marico Limited,MARICO,531642.0
+Marine Electricals (India) Limited,MARINE,Not Available
+Marksans Pharma Limited,MARKSANS,524404.0
+Maruti Suzuki India Limited,MARUTI,532500.0
+MAS Financial Services Limited,MASFIN,540749.0
+Mask Investments Limited,MASKINVEST,Not Available
+Mastek Limited,MASTEK,523704.0
+Master Trust Limited,MASTERTR,511768.0
+Matrimony.Com Limited,MATRIMONY,540704.0
+Mawana Sugars Limited,MAWANASUG,523371.0
+Max Estates Limited,MAXESTATES,544008.0
+Max Healthcare Institute Limited,MAXHEALTH,Not Available
+Max India Limited,MAXIND,543223.0
+Mayur Uniquoters Ltd,MAYURUNIQ,522249.0
+Mazda Limited,MAZDA,523792.0
+Mazagon Dock Shipbuilders Limited,MAZDOCK,Not Available
+Madhya Bharat Agro Products Limited,MBAPL,Not Available
+MBL Infrastructure Limited,MBLINFRA,533152.0
+Madhav Copper Limited,MCL,Not Available
+Mcleod Russel India Limited,MCLEODRUSS,532654.0
+Magellanic Cloud Limited,MCLOUD,538891.0
+Multi Commodity Exchange of India Limited,MCX,Not Available
+Global Health Limited,MEDANTA,543654.0
+Medi Assist Healthcare Services Limited,MEDIASSIST,Not Available
+Medicamen Biotech Limited,MEDICAMEQ,531146.0
+Medico Remedies Limited,MEDICO,540937.0
+Medplus Health Services Limited,MEDPLUS,Not Available
+Megasoft Limited,MEGASOFT,532408.0
+Megastar Foods Limited,MEGASTAR,541352.0
+Menon Bearings Limited,MENONBE,523828.0
+MEP Infrastructure Developers Limited,MEP,539126.0
+Metro Brands Limited,METROBRAND,543426.0
+Metropolis Healthcare Limited,METROPOLIS,542650.0
+Mahalaxmi Fabric Mills Limited,MFML,544233.0
+Max Financial Services Limited,MFSL,500271.0
+Mangalam Global Enterprise Limited,MGEL,Not Available
+Mahanagar Gas Limited,MGL,539957.0
+Mahalaxmi Rubtech Limited,MHLXMIRU,514450.0
+Mahindra Holidays & Resorts India Limited,MHRIL,Not Available
+MIC Electronics Limited,MICEL,532850.0
+Mishra Dhatu Nigam Limited,MIDHANI,541195.0
+Minda Corporation Limited,MINDACORP,538962.0
+Mindteck (India) Limited,MINDTECK,517344.0
+MIRC Electronics Limited,MIRCELECTR,500279.0
+Mirza International Limited,MIRZAINT,526642.0
+MITCON Consultancy & Engineering Services Limited,MITCON,Not Available
+Mittal Life Style Limited,MITTAL,Not Available
+M K Proteins Limited,MKPL,Not Available
+MM Forgings Limited,MMFL,Not Available
+MMP Industries Limited,MMP,Not Available
+MMTC Limited,MMTC,513377.0
+One Mobikwik Systems Limited,MOBIKWIK,544305.0
+Modi Rubber Limited,MODIRUBBER,500890.0
+MODISON LIMITED,MODISONLTD,506261.0
+Modern Threads (India) Limited,MODTHREAD,500282.0
+Mohit Industries Limited,MOHITIND,531453.0
+MOIL Limited,MOIL,533286.0
+Moksh Ornaments Limited,MOKSH,Not Available
+Meghmani Organics Limited,MOL,543331.0
+Mold-Tek Technologies Limited,MOLDTECH,526263.0
+Mold-Tek Packaging Limited,MOLDTKPAC,533080.0
+Monarch Networth Capital Limited,MONARCH,Not Available
+Monte Carlo Fashions Limited,MONTECARLO,538836.0
+Morepen Laboratories Limited,MOREPENLAB,500288.0
+Moschip Technologies Limited,MOSCHIP,532407.0
+Samvardhana Motherson International Limited,MOTHERSON,Not Available
+Motilal Oswal Financial Services Limited,MOTILALOFS,Not Available
+Motisons Jewellers Limited,MOTISONS,544053.0
+The Motor & General Finance Limited,MOTOGENFIN,Not Available
+MphasiS Limited,MPHASIS,526299.0
+MPS Limited,MPSLTD,532440.0
+MRF Limited,MRF,500290.0
+Mangalore Refinery and Petrochemicals Limited,MRPL,Not Available
+MSP Steel & Power Limited,MSPL,532650.0
+Mstc Limited,MSTCLTD,542597.0
+Motherson Sumi Wiring India Limited,MSUMI,Not Available
+Mtar Technologies Limited,MTARTECH,543270.0
+MT Educare Limited,MTEDUCARE,534312.0
+Mahanagar Telephone Nigam Limited,MTNL,500108.0
+Mufin Green Finance Limited,MUFIN,542774.0
+Credo Brands Marketing Limited,MUFTI,544058.0
+Mukand Limited,MUKANDLTD,500460.0
+Mukka Proteins Limited,MUKKA,544135.0
+Mukta Arts Limited,MUKTAARTS,532357.0
+Munjal Auto Industries Limited,MUNJALAU,520059.0
+Munjal Showa Limited,MUNJALSHOW,520043.0
+Murudeshwar Ceramics Limited,MURUDCERA,515037.0
+Muthoot Capital Services Limited,MUTHOOTCAP,511766.0
+Muthoot Finance Limited,MUTHOOTFIN,533398.0
+Muthoot Microfin Limited,MUTHOOTMF,544055.0
+Manoj Vaibhav Gems N Jewellers Limited,MVGJL,Not Available
+NACL Industries Limited,NACLIND,524709.0
+Nagarjuna Fertilizers and Chemicals Limited,NAGAFERT,Not Available
+Nagreeka Capital & Infrastructure Limited,NAGREEKCAP,Not Available
+Nagreeka Exports Limited,NAGREEKEXP,521109.0
+Nahar Capital and Financial Services Limited,NAHARCAP,Not Available
+Nahar Industrial Enterprises Limited,NAHARINDUS,Not Available
+Nahar Poly Films Limited,NAHARPOLY,Not Available
+Nahar Spinning Mills Limited,NAHARSPING,500296.0
+Nippon Life India Asset Management Limited,NAM-INDIA,Not Available
+Narmada Agrobase Limited,NARMADA,543643.0
+Natural Capsules Limited,NATCAPSUQ,524654.0
+Natco Pharma Limited,NATCOPHARM,524816.0
+Nath Bio-Genes (India) Limited,NATHBIOGEN,537291.0
+National Aluminium Company Limited,NATIONALUM,Not Available
+Info Edge (India) Limited,NAUKRI,532777.0
+NAVA LIMITED,NAVA,513023.0
+Navin Fluorine International Limited,NAVINFLUOR,Not Available
+Navkar Corporation Limited,NAVKARCORP,539332.0
+Navkar Urbanstructure Limited,NAVKARURB,531494.0
+Navneet Education Limited,NAVNETEDUL,508989.0
+Nazara Technologies Limited,NAZARA,543280.0
+NBCC (India) Limited,NBCC,534309.0
+N. B. I. Industrial Finance Company Limited,NBIFIN,Not Available
+NCC Limited,NCC,500294.0
+NCL Industries Limited,NCLIND,502168.0
+Naga Dhunseri Group Limited,NDGL,Not Available
+Nandan Denim Limited,NDL,532641.0
+NDL Ventures Limited,NDLVENTURE,500189.0
+Ndr Auto Components Limited,NDRAUTO,543214.0
+New Delhi Television Limited,NDTV,532529.0
+North Eastern Carrying Corporation Limited,NECCLTD,Not Available
+Nectar Lifesciences Limited,NECLIFE,532649.0
+Nelcast Limited,NELCAST,532864.0
+NELCO Limited,NELCO,504112.0
+Neogen Chemicals Limited,NEOGEN,542665.0
+Nesco Limited,NESCO,505355.0
+Nestle India Limited,NESTLEIND,500790.0
+Netweb Technologies India Limited,NETWEB,Not Available
+Network18 Media & Investments Limited,NETWORK18,532798.0
+Neuland Laboratories Limited,NEULANDLAB,524558.0
+Newgen Software Technologies Limited,NEWGEN,Not Available
+Next Mediaworks Limited,NEXTMEDIA,532416.0
+National Fertilizers Limited,NFL,523630.0
+Nakoda Group of Industries Limited,NGIL,Not Available
+NGL Fine-Chem Limited,NGLFINE,524774.0
+Narayana Hrudayalaya Ltd.,NH,539551.0
+NHPC Limited,NHPC,533098.0
+The New India Assurance Company Limited,NIACL,Not Available
+NIBE Limited,NIBE,535136.0
+NRB Industrial Bearings Limited,NIBL,535458.0
+NIIT Limited,NIITLTD,500304.0
+NIIT Learning Systems Limited,NIITMTS,543952.0
+Nila Infrastructures Limited,NILAINFRA,530377.0
+Nila Spaces Limited,NILASPACES,542231.0
+Nilkamal Limited,NILKAMAL,523385.0
+NINtec Systems Limited,NINSYS,539843.0
+Indo-National Limited,NIPPOBATRY,504058.0
+Niraj Cement Structurals Limited,NIRAJ,532986.0
+Niraj Ispat Industries Limited,NIRAJISPAT,Not Available
+Nitco Limited,NITCO,532722.0
+Nitin Spinners Limited,NITINSPIN,532698.0
+Nitiraj Engineers Limited,NITIRAJ,Not Available
+Niva Bupa Health Insurance Company Limited,NIVABUPA,Not Available
+NK Industries Limited,NKIND,Not Available
+NLC India Limited,NLCINDIA,513683.0
+NMDC Limited,NMDC,526371.0
+NOCIL Limited,NOCIL,500730.0
+Noida Toll Bridge Company Limited,NOIDATOLL,532481.0
+Norben Tea & Exports Limited,NORBTEAEXP,519528.0
+Northern Arc Capital Limited,NORTHARC,544260.0
+Nova Agritech Limited,NOVAAGRI,544100.0
+Network People Services Technologies Limited,NPST,Not Available
+N R Agarwal Industries Limited,NRAIL,Not Available
+NRB Bearing Limited,NRBBEARING,Not Available
+Nupur Recyclers Limited,NRL,Not Available
+Nalwa Sons Investments Limited,NSIL,532256.0
+NMDC Steel Limited,NSLNISP,543768.0
+NTPC Limited,NTPC,532555.0
+NTPC Green Energy Limited,NTPCGREEN,544289.0
+Nucleus Software Exports Limited,NUCLEUS,531209.0
+Nureca Limited,NURECA,543264.0
+Nuvama Wealth Management Limited,NUVAMA,Not Available
+Nuvoco Vistas Corporation Limited,NUVOCO,Not Available
+FSN E-Commerce Ventures Limited,NYKAA,Not Available
+Oriental Aromatics Limited,OAL,500078.0
+Orissa Bengal Carrier Limited,OBCL,541206.0
+Oberoi Realty Limited,OBEROIRLTY,533273.0
+OCCL Limited,OCCLLTD,544278.0
+Odigma Consultancy Solutions Limited,ODIGMA,Not Available
+Oracle Financial Services Software Limited,OFSS,Not Available
+Oil India Limited,OIL,533106.0
+Oil Country Tubular Limited,OILCOUNTUB,500313.0
+Ola Electric Mobility Limited,OLAELEC,544225.0
+Olectra Greentech Limited,OLECTRA,532439.0
+Omax Autos Limited,OMAXAUTO,520021.0
+Omaxe Limited,OMAXE,532880.0
+OM INFRA LIMITED,OMINFRAL,531092.0
+Onelife Capital Advisors Limited,ONELIFECAP,533632.0
+One Point One Solutions Limited,ONEPOINT,Not Available
+Onesource Specialty Pharma Limited,ONESOURCE,Not Available
+Oil & Natural Gas Corporation Limited,ONGC,Not Available
+OnMobile Global Limited,ONMOBILE,Not Available
+Onward Technologies Limited,ONWARDTEC,517536.0
+Optiemus Infracom Limited,OPTIEMUS,530135.0
+Orbit Exports Limited,ORBTEXP,512626.0
+Orchasp Limited,ORCHASP,532271.0
+Orchid Pharma Limited,ORCHPHARMA,524372.0
+Oricon Enterprises Limited,ORICONENT,513121.0
+Oriental Trimex Limited,ORIENTALTL,532817.0
+Orient Bell Limited,ORIENTBELL,530365.0
+Orient Cement Limited,ORIENTCEM,535754.0
+ORIENT CERATECH LIMITED,ORIENTCER,504879.0
+Orient Electric Limited,ORIENTELEC,541301.0
+Oriental Hotels Limited,ORIENTHOT,500314.0
+Orient Press Limited,ORIENTLTD,526325.0
+Orient Paper & Industries Limited,ORIENTPPR,502420.0
+Orient Technologies Limited,ORIENTTECH,544235.0
+The Orissa Minerals Development Company Limited,ORISSAMINE,Not Available
+Ortel Communications Limited,ORTEL,539015.0
+ORTIN GLOBAL LIMITED,ORTINGLOBE,539287.0
+Osia Hyper Retail Limited,OSIAHYPER,Not Available
+Oswal Agro Mills Limited,OSWALAGRO,500317.0
+Oswal Greentech Limited,OSWALGREEN,539290.0
+Oswal Pumps Limited,OSWALPUMPS,544418.0
+ShreeOswal Seeds And Chemicals Limited,OSWALSEEDS,Not Available
+Page Industries Limited,PAGEIND,532827.0
+Paisalo Digital Limited,PAISALO,532900.0
+PAKKA LIMITED,PAKKA,516030.0
+Palash Securities Limited,PALASHSECU,540648.0
+Palred Technologies Limited,PALREDTEC,532521.0
+Panacea Biotec Limited,PANACEABIO,531349.0
+Panache Digilife Limited,PANACHE,Not Available
+Panama Petrochem Limited,PANAMAPET,524820.0
+Pansari Developers Limited,PANSARI,Not Available
+Par Drugs And Chemicals Limited,PAR,Not Available
+Paramount Communications Limited,PARACABLES,530555.0
+Paradeep Phosphates Limited,PARADEEP,543530.0
+Parag Milk Foods Limited,PARAGMILK,539889.0
+Paras Defence and Space Technologies Limited,PARAS,Not Available
+Paras Petrofils Limited,PARASPETRO,521246.0
+Apeejay Surrendra Park Hotels Limited,PARKHOTELS,544111.0
+Parsvnath Developers Limited,PARSVNATH,532780.0
+Pashupati Cotspin Limited,PASHUPATI,544448.0
+Pasupati Acrylon Limited,PASUPTAC,500456.0
+Patanjali Foods Limited,PATANJALI,500368.0
+Patel Engineering Limited,PATELENG,531120.0
+Patel Integrated Logistics Limited,PATINTLOG,526381.0
+Pavna Industries Limited,PAVNAIND,543915.0
+One 97 Communications Limited,PAYTM,543396.0
+PCBL Chemical Limited,PCBL,506590.0
+PC Jeweller Limited,PCJEWELLER,534809.0
+Pudumjee Paper Products Limited,PDMJEPAPER,Not Available
+PDS Limited,PDSL,538730.0
+Pearl Polymers Limited,PEARLPOLY,523260.0
+Piramal Enterprises Limited,PEL,500302.0
+Pennar Industries Limited,PENIND,513228.0
+Peninsula Land Limited,PENINLAND,503031.0
+Persistent Systems Limited,PERSISTENT,533179.0
+Petronet LNG Limited,PETRONET,532522.0
+Power Finance Corporation Limited,PFC,532810.0
+Pfizer Limited,PFIZER,500680.0
+Prime Focus Limited,PFOCUS,532748.0
+PTC India Financial Services Limited,PFS,Not Available
+PG Electroplast Limited,PGEL,533581.0
+Procter & Gamble Hygiene and Health Care Limited,PGHH,Not Available
+Procter & Gamble Health Limited,PGHL,Not Available
+Pearl Global Industries Limited,PGIL,Not Available
+The Phoenix Mills Limited,PHOENIXLTD,503100.0
+Piccadily Agro Industries Limited,PICCADIL,530305.0
+Pidilite Industries Limited,PIDILITIND,500331.0
+Power & Instrumentation (Gujarat) Limited,PIGL,Not Available
+PI Industries Limited,PIIND,Not Available
+Pilani Investment and Industries Corporation Limited,PILANIINVS,Not Available
+PIL ITALICA LIFESTYLE LIMITED,PILITA,500327.0
+Pioneer Embroideries Limited,PIONEEREMB,514300.0
+Pitti Engineering Limited,PITTIENG,513519.0
+Pix Transmissions Limited,PIXTRANS,500333.0
+The Peria Karamalai Tea & Produce Company Limited,PKTEA,Not Available
+Plastiblends India Limited,PLASTIBLEN,523648.0
+Platinum Industries Limited,PLATIND,544134.0
+Plaza Wires Limited,PLAZACABLE,544003.0
+Punjab National Bank,PNB,532461.0
+PNB Gilts Limited,PNBGILTS,532366.0
+PNB Housing Finance Limited,PNBHOUSING,540173.0
+Pritish Nandy Communications Limited,PNC,Not Available
+PNC Infratech Limited,PNCINFRA,539150.0
+P N Gadgil Jewellers Limited,PNGJL,544256.0
+Pondy Oxides & Chemicals Limited,POCL,532626.0
+Poddar Pigments Limited,PODDARMENT,524570.0
+Pokarna Limited,POKARNA,532486.0
+PB Fintech Limited,POLICYBZR,543390.0
+Polycab India Limited,POLYCAB,542652.0
+Poly Medicure Limited,POLYMED,531768.0
+Polyplex Corporation Limited,POLYPLEX,524051.0
+Ponni Sugars (Erode) Limited,PONNIERODE,532460.0
+Poonawalla Fincorp Limited,POONAWALLA,524000.0
+Power Grid Corporation of India Limited,POWERGRID,Not Available
+Hitachi Energy India Limited,POWERINDIA,543187.0
+Power Mech Projects Limited,POWERMECH,539302.0
+PPAP Automotive Limited,PPAP,Not Available
+Prakash Pipes Limited,PPL,542684.0
+Piramal Pharma Limited,PPLPHARMA,543635.0
+Prabha Energy Limited,PRABHA,544379.0
+Prajay Engineers Syndicate Limited,PRAENG,531746.0
+Praj Industries Limited,PRAJIND,522205.0
+Prakash Industries Limited,PRAKASH,506022.0
+Prakash Steelage Limited,PRAKASHSTL,533239.0
+Praxis Home Retail Limited,PRAXIS,540901.0
+Precision Camshafts Limited,PRECAM,539636.0
+Precot Limited,PRECOT,Not Available
+Precision Wires India Limited,PRECWIRE,523539.0
+Premier Explosives Limited,PREMEXPLN,526247.0
+Premier Limited,PREMIER,500540.0
+Premier Energies Limited,PREMIERENE,544238.0
+Premier Polyfilm Limited,PREMIERPOL,514354.0
+Prestige Estates Projects Limited,PRESTIGE,533274.0
+Pricol Limited,PRICOLLTD,540293.0
+Prime Securities Limited,PRIMESECU,500337.0
+Primo Chemicals Limited,PRIMO,506852.0
+Prince Pipes And Fittings Limited,PRINCEPIPE,Not Available
+Priti International Limited,PRITI,Not Available
+Pritika Auto Industries Limited,PRITIKAUTO,Not Available
+Privi Speciality Chemicals Limited,PRIVISCL,Not Available
+Prostarm Info Systems Limited,PROSTARM,544410.0
+Protean eGov Technologies Limited,PROTEAN,Not Available
+Prozone Realty Limited,PROZONER,534675.0
+Prism Johnson Limited,PRSMJOHNSN,500338.0
+Prudent Corporate Advisory Services Limited,PRUDENT,Not Available
+Prudential Sugar Corporation Limited,PRUDMOULI,Not Available
+Punjab & Sind Bank,PSB,533295.0
+PSP Projects Limited,PSPPROJECT,540544.0
+PTC India Limited,PTC,532524.0
+PTC Industries Limited,PTCIL,539006.0
+PTL Enterprises Limited,PTL,509220.0
+Punjab Chemicals & Crop Protection Limited,PUNJABCHEM,Not Available
+Puravankara Limited,PURVA,532891.0
+PVP Ventures Limited,PVP,517556.0
+PVR INOX Limited,PVRINOX,532689.0
+Popular Vehicles and Services Limited,PVSL,544144.0
+Pyramid Technoplast Limited,PYRAMID,543969.0
+Quality Power Electrical Equipments Limited,QPOWER,Not Available
+Quadrant Future Tek Limited,QUADFUTURE,544336.0
+Quess Corp Limited,QUESS,539978.0
+Quick Heal Technologies Limited,QUICKHEAL,Not Available
+Race Eco Chain Limited,RACE,537785.0
+RACL Geartech Limited,RACLGEAR,520073.0
+Radaan Mediaworks India Limited,RADAAN,Not Available
+Radhika Jeweltech Limited,RADHIKAJWE,540125.0
+Radiant Cash Management Services Limited,RADIANTCMS,Not Available
+Radico Khaitan Limited,RADICO,532497.0
+Music Broadcast Limited,RADIOCITY,540366.0
+Railtel Corporation Of India Limited,RAILTEL,Not Available
+Rain Industries Limited,RAIN,500339.0
+Rainbow Childrens Medicare Limited,RAINBOW,Not Available
+Rajesh Exports Limited,RAJESHEXPO,531500.0
+Rajnandini Metal Limited,RAJMET,Not Available
+Rajoo Engineers Limited,RAJOOENG,522257.0
+Rajratan Global Wire Limited,RAJRATAN,517522.0
+Raj Rayon Industries Limited,RAJRILTD,530699.0
+Rajshree Sugars & Chemicals Limited,RAJSREESUG,Not Available
+Raj Television Network Limited,RAJTV,532826.0
+Rallis India Limited,RALLIS,500355.0
+Shree Rama Newsprint Limited,RAMANEWS,500356.0
+Rama Phosphates Limited,RAMAPHO,524037.0
+Rama Steel Tubes Limited,RAMASTEEL,539309.0
+The Ramco Cements Limited,RAMCOCEM,500260.0
+Ramco Industries Limited,RAMCOIND,532369.0
+Ramco Systems Limited,RAMCOSYS,532370.0
+Ramky Infrastructure Limited,RAMKY,533262.0
+Ram Ratna Wires Limited,RAMRAT,522281.0
+Rana Sugars Limited,RANASUG,507490.0
+Rane Holdings Limited,RANEHOLDIN,505800.0
+Rategain Travel Technologies Limited,RATEGAIN,Not Available
+Ratnamani Metals & Tubes Limited,RATNAMANI,520111.0
+Ratnaveer Precision Engineering Limited,RATNAVEER,Not Available
+Raymond Limited,RAYMOND,500330.0
+Raymond Lifestyle Limited,RAYMONDLSL,544240.0
+Raymond Realty Limited,RAYMONDREL,544420.0
+Restaurant Brands Asia Limited,RBA,543248.0
+RBL Bank Limited,RBLBANK,540065.0
+RBZ Jewellers Limited,RBZJEWEL,544060.0
+Rashtriya Chemicals and Fertilizers Limited,RCF,Not Available
+REC Limited,RECLTD,532955.0
+Redington Limited,REDINGTON,532805.0
+Redtape Limited,REDTAPE,543957.0
+Refex Industries Limited,REFEX,532884.0
+Regency Ceramics Limited,REGENCERAM,515018.0
+Relaxo Footwears Limited,RELAXO,530517.0
+Reliance Chemotex Industries Limited,RELCHEMQ,Not Available
+Reliable Data Services Limited,RELIABLE,544207.0
+Reliance Industries Limited,RELIANCE,500325.0
+Religare Enterprises Limited,RELIGARE,532915.0
+Reliance Infrastructure Limited,RELINFRA,500390.0
+Ravindra Energy Limited,RELTD,504341.0
+Remsons Industries Limited,REMSONSIND,530919.0
+Shree Renuka Sugars Limited,RENUKA,532670.0
+Repco Home Finance Limited,REPCOHOME,535322.0
+Rudrabhishek Enterprises Limited,REPL,Not Available
+Repro India Limited,REPRO,532687.0
+Responsive Industries Limited,RESPONIND,505509.0
+JHS Svendgaard Retail Ventures Limited,RETAIL,544197.0
+Renaissance Global Limited,RGL,532923.0
+Reliance Home Finance Limited,RHFL,540709.0
+RHI MAGNESITA INDIA LIMITED,RHIM,534076.0
+Robust Hotels Limited,RHL,543901.0
+Rico Auto Industries Limited,RICOAUTO,520008.0
+Reliance Industrial Infrastructure Limited,RIIL,Not Available
+Rishabh Instruments Limited,RISHABH,543977.0
+Ritco Logistics Limited,RITCO,542383.0
+RITES Limited,RITES,541556.0
+Ravi Kumar Distilleries Limited,RKDL,533294.0
+RKEC Projects Limited,RKEC,Not Available
+Ramkrishna Forgings Limited,RKFORGE,532527.0
+R K Swamy Limited,RKSWAMY,544136.0
+Rane (Madras) Limited,RML,532661.0
+Royal Orchid Hotels Limited,ROHLTD,532699.0
+Rolex Rings Limited,ROLEXRINGS,543325.0
+Rollatainers Limited,ROLLT,502448.0
+Rolta India Limited,ROLTA,500366.0
+Raj Oil Mills Limited,ROML,533093.0
+Rossari Biotech Limited,ROSSARI,543213.0
+Rossell India Limited,ROSSELLIND,533168.0
+Rossell Techsys Limited,ROSSTECH,544294.0
+Roto Pumps Limited,ROTO,517500.0
+ROUTE MOBILE LIMITED,ROUTE,543228.0
+Raghav Productivity Enhancers Limited,RPEL,539837.0
+RPG Life Sciences Limited,RPGLIFE,532983.0
+Reliance Power Limited,RPOWER,532939.0
+R.P.P. Infra Projects Limited,RPPINFRA,533284.0
+Rajshree Polypack Limited,RPPL,Not Available
+RPSG VENTURES LIMITED,RPSGVENT,542333.0
+Rashi Peripherals Limited,RPTECH,544119.0
+R R Kabel Limited,RRKABEL,543981.0
+R. S. Software (India) Limited,RSSOFTWARE,Not Available
+RSWM Limited,RSWM,500350.0
+R Systems International Limited,RSYSTEMS,532735.0
+RattanIndia Enterprises Limited,RTNINDIA,Not Available
+RattanIndia Power Limited,RTNPOWER,533122.0
+Rubfila International Limited,RUBFILA,500367.0
+The Ruby Mills Limited,RUBYMILLS,Not Available
+Ruchi Infrastructure Limited,RUCHINFRA,509020.0
+Ruchira Papers Limited,RUCHIRA,532785.0
+Rupa & Company Limited,RUPA,533552.0
+Rushil Decor Limited,RUSHIL,533470.0
+Keystone Realtors Limited,RUSTOMJEE,543669.0
+Ravinder Heights Limited,RVHL,543251.0
+Rail Vikas Nigam Limited,RVNL,542649.0
+Revathi Equipment India Limited,RVTH,Not Available
+S&S Power Switchgears Limited,S&SPOWER,Not Available
+Sab Events & Governance Now Media Limited,SABEVENTS,Not Available
+Sri Adhikari Brothers Television Network Limited,SABTNL,Not Available
+Sadbhav Engineering Limited,SADBHAV,532710.0
+Sadbhav Infrastructure Project Limited,SADBHIN,539346.0
+Sadhana Nitrochem Limited,SADHNANIQ,506642.0
+Safari Industries (India) Limited,SAFARI,523025.0
+Sagardeep Alloys Limited,SAGARDEEP,Not Available
+Sagar Cements Limited,SAGCEM,502090.0
+Sagility India Limited,SAGILITY,544282.0
+Sah Polymers Limited,SAH,543743.0
+Sahyadri Industries Limited,SAHYADRI,532841.0
+Steel Authority of India Limited,SAIL,500113.0
+Sai Life Sciences Limited,SAILIFE,544306.0
+Sakar Healthcare Limited,SAKAR,Not Available
+Sakthi Sugars Limited,SAKHTISUG,507315.0
+Saksoft Limited,SAKSOFT,590051.0
+Sakuma Exports Limited,SAKUMA,532713.0
+Salasar Techno Engineering Limited,SALASAR,Not Available
+Salona Cotspin Limited,SALONA,590056.0
+S.A.L. Steel Limited,SALSTEEL,Not Available
+Salzer Electronics Limited,SALZERELEC,517059.0
+Sambhaav Media Limited,SAMBHAAV,511630.0
+Sambhv Steel Tubes Limited,SAMBHV,544430.0
+Samhi Hotels Limited,SAMHI,543984.0
+Sammaan Capital Limited,SAMMAANCAP,535789.0
+Sampann Utpadan India Limited,SAMPANN,534598.0
+Sanathan Textiles Limited,SANATHAN,544314.0
+The Sandesh Limited,SANDESH,Not Available
+Sandhar Technologies Limited,SANDHAR,541163.0
+Sandur Manganese & Iron Ores Limited,SANDUMA,Not Available
+Sangam (India) Limited,SANGAMIND,514234.0
+Sanghi Industries Limited,SANGHIIND,526521.0
+Sanghvi Movers Limited,SANGHVIMOV,530073.0
+Sanginita Chemicals Limited,SANGINITA,Not Available
+Sanofi India Limited,SANOFI,500674.0
+Sanofi Consumer Healthcare India Limited,SANOFICONR,Not Available
+Sansera Engineering Limited,SANSERA,543358.0
+Sanstar Limited,SANSTAR,544217.0
+Sanwaria Consumer Limited,SANWARIA,519260.0
+Sapphire Foods India Limited,SAPPHIRE,543397.0
+Sarda Energy & Minerals Limited,SARDAEN,504614.0
+Saregama India Limited,SAREGAMA,532163.0
+Sarla Performance Fibers Limited,SARLAPOLY,526885.0
+Sarveshwar Foods Limited,SARVESHWAR,543688.0
+Sasken Technologies Limited,SASKEN,532663.0
+Sastasundar Ventures Limited,SASTASUNDR,533259.0
+Satia Industries Limited,SATIA,539201.0
+Satin Creditcare Network Limited,SATIN,Not Available
+Saurashtra Cement Limited,SAURASHCEM,502175.0
+SBC Exports Limited,SBC,542725.0
+Shivalik Bimetal Controls Limited,SBCL,513097.0
+SBFC Finance Limited,SBFC,543959.0
+Suratwwala Business Group Limited,SBGLP,Not Available
+SBI Cards and Payment Services Limited,SBICARD,543066.0
+SBI Life Insurance Company Limited,SBILIFE,Not Available
+State Bank of India,SBIN,500112.0
+Schaeffler India Limited,SCHAEFFLER,505790.0
+S Chand And Company Limited,SCHAND,540497.0
+Schneider Electric Infrastructure Limited,SCHNEIDER,Not Available
+Shipping Corporation Of India Limited,SCI,523598.0
+Shipping Corporation Of India Limited,SCI,544142.0
+Shipping Corporation of India Land and Assets Limited,SCILAL,Not Available
+Scoda Tubes Limited,SCODATUBES,544411.0
+Sheetal Cool Products Limited,SCPL,540757.0
+Som Distilleries & Breweries Limited,SDBL,Not Available
+Seamec Limited,SEAMECLTD,526807.0
+SecMark Consultancy Limited,SECMARK,543234.0
+SECUREKLOUD TECHNOLOGIES LIMITED,SECURKLOUD,Not Available
+Sejal Glass Limited,SEJALLTD,532993.0
+Selan Exploration Technology Limited,SELAN,Not Available
+SEL Manufacturing Company Limited,SELMC,532886.0
+Semac Construction Limited,SEMAC,505368.0
+Senco Gold Limited,SENCO,543936.0
+Senores Pharmaceuticals Limited,SENORES,Not Available
+SEPC Limited,SEPC,532945.0
+SEPC Limited,SEPC,890218.0
+Sequent Scientific Limited,SEQUENT,512529.0
+Servotech Renewable Power System Limited,SERVOTECH,Not Available
+Seshasayee Paper and Boards Limited,SESHAPAPER,502450.0
+Setco Automotive Limited,SETCO,505075.0
+Setubandhan Infrastructure Limited,SETUINFRA,Not Available
+Sheela Foam Limited,SFL,540203.0
+Synergy Green Industries Limited,SGIL,Not Available
+STL Global Limited,SGL,532730.0
+Standard Glass Lining Technology Limited,SGLTL,Not Available
+Shah Metacorp Limited,SHAH,533275.0
+Shah Alloys Limited,SHAHALLOYS,513436.0
+Shaily Engineering Plastics Limited,SHAILY,Not Available
+Shakti Pumps (India) Limited,SHAKTIPUMP,531431.0
+Shalby Limited,SHALBY,540797.0
+Shalimar Paints Limited,SHALPAINTS,509874.0
+Shankara Building Products Limited,SHANKARA,Not Available
+Shanti Overseas (India) Limited,SHANTI,Not Available
+Shanthi Gears Limited,SHANTIGEAR,522034.0
+Sharda Cropchem Limited,SHARDACROP,538666.0
+Sharda Motor Industries Limited,SHARDAMOTR,535602.0
+Share India Securities Limited,SHAREINDIA,540725.0
+Shekhawati Industries Limited,SHEKHAWATI,533301.0
+Shemaroo Entertainment Limited,SHEMAROO,538685.0
+Shilpa Medicare Limited,SHILPAMED,530549.0
+Shivalik Rasayan Limited,SHIVALIK,539148.0
+Shivam Autotech Limited,SHIVAMAUTO,532776.0
+Shiva Mills Limited,SHIVAMILLS,540961.0
+Shiva Texyarn Limited,SHIVATEX,511108.0
+S H Kelkar and Company Limited,SHK,539450.0
+Shoppers Stop Limited,SHOPERSTOP,532638.0
+Shradha Infraprojects Limited,SHRADHA,Not Available
+Shree Digvijay Cement Co.Ltd,SHREDIGCEM,502180.0
+SHREE CEMENT LIMITED,SHREECEM,500387.0
+Shree Pushkar Chemicals & Fertilisers Limited,SHREEPUSHK,Not Available
+Shree Rama Multi-Tech Limited,SHREERAMA,532310.0
+Shrenik Limited,SHRENIK,Not Available
+Shreyans Industries Limited,SHREYANIND,516016.0
+Shriram Pistons & Rings Limited,SHRIPISTON,544344.0
+Shriram Finance Limited,SHRIRAMFIN,511218.0
+Shriram Properties Limited,SHRIRAMPPS,543419.0
+Shyam Century Ferrous Limited,SHYAMCENT,539252.0
+Shyam Metalics and Energy Limited,SHYAMMETL,Not Available
+Shyam Telecom Limited,SHYAMTEL,517411.0
+Sical Logistics Limited,SICALLOG,520086.0
+Siemens Limited,SIEMENS,500550.0
+Sigachi Industries Limited,SIGACHI,543389.0
+Signet Industries Limited,SIGIND,512131.0
+Sigma Solve Limited,SIGMA,543917.0
+Signatureglobal (India) Limited,SIGNATURE,Not Available
+Signpost India Limited,SIGNPOST,544117.0
+Sikko Industries Limited,SIKKO,Not Available
+Standard Industries Limited,SIL,530017.0
+Silgo Retail Limited,SILGO,Not Available
+SIL Investments Limited,SILINV,521194.0
+Silly Monks Entertainment Limited,SILLYMONKS,Not Available
+Silver Touch Technologies Limited,SILVERTUC,Not Available
+Simbhaoli Sugars Limited,SIMBHALS,539742.0
+Simplex Infrastructures Limited,SIMPLEXINF,523838.0
+Sinclairs Hotels Limited,SINCLAIR,523023.0
+Sindhu Trade Links Limited,SINDHUTRAD,532029.0
+Sintercom India Limited,SINTERCOM,Not Available
+Sirca Paints India Limited,SIRCA,543686.0
+SIS LIMITED,SIS,540673.0
+Siti Networks Limited,SITINET,532795.0
+Siyaram Silk Mills Limited,SIYSIL,503811.0
+S.J.S. Enterprises Limited,SJS,543387.0
+SJVN Limited,SJVN,533206.0
+SKF India Limited,SKFINDIA,500472.0
+Skipper Limited,SKIPPER,538562.0
+SKM Egg Products Export (India) Limited,SKMEGGPROD,532143.0
+SKY GOLD AND DIAMONDS LIMITED,SKYGOLD,541967.0
+Smartlink Holdings Limited,SMARTLINK,532419.0
+Smartworks Coworking Spaces Limited,SMARTWORKS,Not Available
+SMC Global Securities Limited,SMCGLOBAL,543263.0
+SML Isuzu Limited,SMLISUZU,505192.0
+Sarthak Metals Limited,SMLT,540393.0
+SMS Lifesciences India Limited,SMSLIFE,540679.0
+SMS Pharmaceuticals Limited,SMSPHARMA,532815.0
+Snowman Logistics Limited,SNOWMAN,538635.0
+Sobha Limited,SOBHA,532784.0
+Softtech Engineers Limited,SOFTTECH,543470.0
+Solara Active Pharma Sciences Limited,SOLARA,541540.0
+Solara Active Pharma Sciences Limited,SOLARA,890202.0
+Solar Industries India Limited,SOLARINDS,532725.0
+Somany Ceramics Limited,SOMANYCERA,531548.0
+Soma Textiles & Industries Limited,SOMATEX,521034.0
+Somi Conveyor Beltings Limited,SOMICONVEY,533001.0
+Sona BLW Precision Forgings Limited,SONACOMS,Not Available
+SONAM LIMITED,SONAMLTD,Not Available
+Sonata Software Limited,SONATSOFTW,532221.0
+Savita Oil Technologies Limited,SOTL,524667.0
+The South Indian Bank Limited,SOUTHBANK,Not Available
+South West Pinnacle Exploration Limited,SOUTHWEST,Not Available
+S. P. Apparels Limited,SPAL,Not Available
+Spandana Sphoorty Financial Limited,SPANDANA,Not Available
+Sun Pharma Advanced Research Company Limited,SPARC,Not Available
+Spacenet Enterprises India Limited,SPCENET,Not Available
+Speciality Restaurants Limited,SPECIALITY,534425.0
+Spectrum Electrical Industries Limited,SPECTRUM,544386.0
+Spencer's Retail Limited,SPENCERS,542337.0
+Southern Petrochemicals Industries Corporation  Limited,SPIC,Not Available
+SPL Industries Limited,SPLIL,Not Available
+Supreme Petrochem Limited,SPLPETRO,500405.0
+SPML Infra Limited,SPMLINFRA,500402.0
+Sportking India Limited,SPORTKING,539221.0
+Shankar Lal Rampal Dye-Chem Limited,SRD,Not Available
+Sreeleathers Limited,SREEL,535601.0
+SRF Limited,SRF,503806.0
+SRG Housing Finance Limited,SRGHFL,534680.0
+Sree Rayalaseema Hi-Strength Hypo Limited,SRHHYPOLTD,Not Available
+SRM Contractors Limited,SRM,544158.0
+Shree Ram Proteins Limited,SRPL,Not Available
+Saraswati Saree Depot Limited,SSDL,544230.0
+Steel Strips Wheels Limited,SSWL,513262.0
+Stallion India Fluorochemicals Limited,STALLION,544342.0
+Stanley Lifestyles Limited,STANLEY,544202.0
+Strides Pharma Science Limited,STAR,532531.0
+Star Cement Limited,STARCEMENT,540575.0
+Star Health and Allied Insurance Company Limited,STARHEALTH,Not Available
+Star Paper Mills Limited,STARPAPER,516022.0
+Starteck Finance Limited,STARTECK,512381.0
+The State Trading Corporation of India Limited,STCINDIA,Not Available
+Steelcast Limited,STEELCAS,513517.0
+Steel City Securities Limited,STEELCITY,Not Available
+STEEL EXCHANGE INDIA LIMITED,STEELXIND,534748.0
+Stel Holdings Limited,STEL,533316.0
+Sterling Tools Limited,STERTOOLS,530759.0
+Sterlite Technologies Limited,STLTECH,532374.0
+Stove Kraft Limited,STOVEKRAFT,543260.0
+Stylam Industries Limited,STYLAMIND,526951.0
+Baazar Style Retail Limited,STYLEBAAZA,544243.0
+Styrenix Performance Materials Limited,STYRENIX,506222.0
+Subex Limited,SUBEXLTD,532348.0
+Subros Limited,SUBROS,517168.0
+Sudarshan Chemical Industries Limited,SUDARSCHEM,506655.0
+Sukhjit Starch & Chemicals Limited,SUKHJITS,524542.0
+Sula Vineyards Limited,SULA,543711.0
+Sumeet Industries Limited,SUMEETINDS,514211.0
+Sumitomo Chemical India Limited,SUMICHEM,Not Available
+Sumit Woods Limited,SUMIT,Not Available
+Summit Securities Limited,SUMMITSEC,533306.0
+Sundaram Clayton Limited,SUNCLAY,Not Available
+Sundaram Multi Pap Limited,SUNDARAM,533166.0
+Sundaram Finance Limited,SUNDARMFIN,590071.0
+Sundaram Finance Holdings Limited,SUNDARMHLD,Not Available
+Sundaram Brake Linings Limited,SUNDRMBRAK,590072.0
+Sundram Fasteners Limited,SUNDRMFAST,500403.0
+Sundrop Brands Limited,SUNDROP,500215.0
+Sunflag Iron And Steel Company Limited,SUNFLAG,Not Available
+Sun Pharmaceutical Industries Limited,SUNPHARMA,524715.0
+Sunteck Realty Limited,SUNTECK,512179.0
+Sun TV Network Limited,SUNTV,532733.0
+Superhouse Limited,SUPERHOUSE,523283.0
+Super Spinning Mills Limited,SUPERSPIN,521180.0
+Suprajit Engineering Limited,SUPRAJIT,532509.0
+Supreme Holdings & Hospitality (India) Limited,SUPREME,Not Available
+Supreme Industries Limited,SUPREMEIND,509930.0
+Supreme Infrastructure India Limited,SUPREMEINF,Not Available
+Supriya Lifescience Limited,SUPRIYA,543434.0
+Suraj Estate Developers Limited,SURAJEST,Not Available
+Suraj Limited,SURAJLTD,531638.0
+Suraksha Diagnostic Limited,SURAKSHA,544293.0
+Surana Solar Limited,SURANASOL,533298.0
+Surana Telecom and Power Limited,SURANAT&P,Not Available
+Suryalakshmi Cotton Mills Limited,SURYALAXMI,521200.0
+Surya Roshni Limited,SURYAROSNI,500336.0
+Suryoday Small Finance Bank Limited,SURYODAY,Not Available
+Sutlej Textiles and Industries Limited,SUTLEJTEX,Not Available
+Suven Life Sciences Limited,SUVEN,530239.0
+Suvidhaa Infoserve Limited,SUVIDHAA,543281.0
+Suyog Telematics Limited,SUYOG,537259.0
+Suzlon Energy Limited,SUZLON,532667.0
+Shree Vasu Logistics Limited,SVLL,Not Available
+SVP GLOBAL TEXTILES LIMITED,SVPGLOB,505590.0
+Swan Energy Limited,SWANENERGY,503310.0
+Swaraj Engines Limited,SWARAJENG,500407.0
+Swelect Energy Systems Limited,SWELECTES,532051.0
+Swiggy Limited,SWIGGY,544285.0
+Sterling and Wilson Renewable Energy Limited,SWSOLAR,Not Available
+Symphony Limited,SYMPHONY,517385.0
+Syncom Formulations (India) Limited,SYNCOMF,Not Available
+Syngene International Limited,SYNGENE,539268.0
+Syrma SGS Technology Limited,SYRMA,543573.0
+Tainwala Chemical and Plastic (I) Limited,TAINWALCHM,Not Available
+Taj GVK Hotels & Resorts Limited,TAJGVK,Not Available
+Take Solutions Limited,TAKE,532890.0
+Talbros Automotive Components Limited,TALBROAUTO,505160.0
+Tanla Platforms Limited,TANLA,532790.0
+Tara Chand InfraLogistic Solutions Limited,TARACHAND,Not Available
+Tarapur Transformers Limited,TARAPUR,533203.0
+TARC Limited,TARC,543249.0
+Transformers And Rectifiers (India) Limited,TARIL,Not Available
+Tarmat Limited,TARMAT,532869.0
+Tarsons Products Limited,TARSONS,543399.0
+Tasty Bite Eatables Limited,TASTYBITE,519091.0
+Tata Chemicals Limited,TATACHEM,500770.0
+Tata Communications Limited,TATACOMM,500483.0
+TATA CONSUMER PRODUCTS LIMITED,TATACONSUM,500800.0
+Tata Elxsi Limited,TATAELXSI,500408.0
+Tata Investment Corporation Limited,TATAINVEST,Not Available
+Tata Motors Limited,TATAMOTORS,500570.0
+Tata Power Company Limited,TATAPOWER,Not Available
+Tata Steel Limited,TATASTEEL,500470.0
+Tata Technologies Limited,TATATECH,544028.0
+Tatva Chintan Pharma Chem Limited,TATVA,Not Available
+TBO Tek Limited,TBOTEK,544174.0
+Tribhovandas Bhimji Zaveri Limited,TBZ,534369.0
+Transport Corporation of India Limited,TCI,532349.0
+TCI Express Limited,TCIEXP,540212.0
+TCI Finance Limited,TCIFINANCE,501242.0
+TCPL Packaging Limited,TCPLPACK,523301.0
+Tata Consultancy Services Limited,TCS,532540.0
+TD Power Systems Limited,TDPOWERSYS,Not Available
+Teamlease Services Limited,TEAMLEASE,539658.0
+Tech Mahindra Limited,TECHM,532755.0
+Techno Electric & Engineering Company Limited,TECHNOE,Not Available
+TECIL Chemicals and Hydro Power Limited,TECILCHEM,506680.0
+Tega Industries Limited,TEGA,543413.0
+Tejas Networks Limited,TEJASNET,540595.0
+Tembo Global Industries Limited,TEMBO,Not Available
+Tera Software Limited,TERASOFT,533982.0
+Texmaco Infrastructure & Holdings Limited,TEXINFRA,Not Available
+Texmo Pipes and Products Limited,TEXMOPIPES,533164.0
+Texmaco Rail & Engineering Limited,TEXRAIL,533326.0
+Tourism Finance Corporation of India Limited,TFCILTD,Not Available
+Transwarranty Finance Limited,TFL,Not Available
+TGB Banquets And Hotels Limited,TGBHOTELS,532845.0
+Thangamayil Jewellery Limited,THANGAMAYL,533158.0
+The Investment Trust Of India Limited,THEINVEST,530023.0
+Thejo Engineering Limited,THEJO,Not Available
+Schloss Bangalore Limited,THELEELA,544408.0
+Themis Medicare Limited,THEMISMED,530199.0
+Thermax Limited,THERMAX,500411.0
+Thomas Cook  (India)  Limited,THOMASCOOK,500413.0
+Thomas Scott (India) Limited,THOMASCOTT,533941.0
+Thyrocare Technologies Limited,THYROCARE,539871.0
+Tilaknagar Industries Limited,TI,507205.0
+Twamev Construction and Infrastructure Limited,TICL,Not Available
+Technocraft Industries (India) Limited,TIIL,532804.0
+Tube Investments of India Limited,TIINDIA,540762.0
+Tijaria Polypipes Limited,TIJARIA,533629.0
+TIL Limited,TIL,505196.0
+Times Guaranty Limited,TIMESGTY,511559.0
+Time Technoplast Limited,TIMETECHNO,532856.0
+Timken India Limited,TIMKEN,522113.0
+Tinna Rubber and Infrastructure Limited,TINNARUBR,Not Available
+Tips Films Limited,TIPSFILMS,543614.0
+Tips Music Limited,TIPSMUSIC,532375.0
+Thirumalai Chemicals Limited,TIRUMALCHM,500412.0
+Tirupati Forge Limited,TIRUPATIFL,Not Available
+TITAGARH RAIL SYSTEMS LIMITED,TITAGARH,532966.0
+Titan Company Limited,TITAN,500114.0
+Tamilnad Mercantile Bank Limited,TMB,Not Available
+Tamilnadu PetroProducts Limited,TNPETRO,500777.0
+Tamil Nadu Newsprint & Papers Limited,TNPL,531426.0
+Tamilnadu Telecommunication Limited,TNTELE,Not Available
+Tokyo Plast International Limited,TOKYOPLAST,500418.0
+Tolins Tyres Limited,TOLINS,544254.0
+Torrent Pharmaceuticals Limited,TORNTPHARM,500420.0
+Torrent Power Limited,TORNTPOWER,532779.0
+Total Transport Systems Limited,TOTAL,Not Available
+Touchwood Entertainment Limited,TOUCHWOOD,Not Available
+Teamo Productions HQ Limited,TPHQ,533048.0
+TPL Plastech Limited,TPLPLASTEH,526582.0
+Tracxn Technologies Limited,TRACXN,543638.0
+Transrail Lighting Limited,TRANSRAILL,544317.0
+TRANSWORLD SHIPPING LINES LIMITED,TRANSWORLD,Not Available
+Travel Food Services Limited,TRAVELFOOD,544443.0
+Tree House Education & Accessories Limited,TREEHOUSE,Not Available
+TREJHARA SOLUTIONS LIMITED,TREJHARA,542233.0
+Transindia Real Estate Limited,TREL,543955.0
+Trent Limited,TRENT,500251.0
+TRF Limited,TRF,505854.0
+Trident Limited,TRIDENT,521064.0
+Trigyn Technologies Limited,TRIGYN,517562.0
+Triveni Turbine Limited,TRITURBINE,533655.0
+Triveni Engineering & Industries Limited,TRIVENI,Not Available
+TruCap Finance Limited,TRU,540268.0
+TTK Healthcare Limited,TTKHLTCARE,507747.0
+TTK Prestige Limited,TTKPRESTIG,517506.0
+T T Limited,TTL,514142.0
+T T Limited,TTL,751012.0
+T T Ltd-RE,TTL-RE,Not Available
+Tata Teleservices (Maharashtra) Limited,TTML,532371.0
+TVS Electronics Limited,TVSELECT,532513.0
+TVS Holdings Limited,TVSHLTD,520056.0
+TVS Motor Company Limited,TVSMOTOR,532343.0
+TVS Supply Chain Solutions Limited,TVSSCS,Not Available
+TVS Srichakra Limited,TVSSRICHAK,509243.0
+TV Today Network Limited,TVTODAY,532515.0
+TV Vision Limited,TVVISION,540083.0
+United Breweries Limited,UBL,532478.0
+UCAL LIMITED,UCAL,500464.0
+UCO Bank,UCOBANK,532505.0
+Udaipur Cement Works Limited,UDAICEMENT,530131.0
+Updater Services Limited,UDS,543996.0
+UFLEX Limited,UFLEX,500148.0
+UFO Moviez India Limited,UFO,539141.0
+The Ugar Sugar Works Limited,UGARSUGAR,Not Available
+Ugro Capital Limited,UGROCAP,511742.0
+Ujjivan Small Finance Bank Limited,UJJIVANSFB,Not Available
+UltraTech Cement Limited,ULTRACEMCO,532538.0
+Uma Exports Limited,UMAEXPORTS,543513.0
+Usha Martin Education & Solutions Limited,UMESLTD,Not Available
+UMIYA BUILDCON LIMITED,UMIYA-MRO,532376.0
+Unichem Laboratories Limited,UNICHEMLAB,506690.0
+United Drilling Tools Limited,UNIDT,522014.0
+Unicommerce Esolutions Limited,UNIECOM,544227.0
+Uniphos Enterprises Limited,UNIENTER,500429.0
+Uniinfo Telecom Services Limited,UNIINFO,Not Available
+Unimech Aerospace and Manufacturing Limited,UNIMECH,Not Available
+Union Bank of India,UNIONBANK,532477.0
+Uniparts India Limited,UNIPARTS,543689.0
+United Spirits Limited,UNITDSPR,532432.0
+Unitech Limited,UNITECH,507878.0
+United Polyfab Gujarat Limited,UNITEDPOLY,Not Available
+The United Nilgiri Tea Estates Company Limited,UNITEDTEA,Not Available
+Univastu India Limited,UNIVASTU,Not Available
+Universal Cables Limited,UNIVCABLES,504212.0
+Universus Photo Imagings Limited,UNIVPHOTO,Not Available
+UNO Minda Limited,UNOMINDA,532539.0
+UPL Limited,UPL,512070.0
+UPL Limited,UPL,890209.0
+Uravi Defence and Technology Limited,URAVIDEF,Not Available
+Urja Global Limited,URJA,526987.0
+Usha Martin Limited,USHAMART,517146.0
+Udayshivakumar Infra Limited,USK,543861.0
+UTI Asset Management Company Limited,UTIAMC,Not Available
+Utkarsh Small Finance Bank Limited,UTKARSHBNK,Not Available
+Uttam Sugar Mills Limited,UTTAMSUGAR,532729.0
+U. Y. Fincorp Limited,UYFINCORP,530579.0
+V2 Retail Limited,V2RETAIL,532867.0
+Vadilal Industries Limited,VADILALIND,519156.0
+Vaibhav Global Limited,VAIBHAVGBL,532156.0
+Vaishali Pharma Limited,VAISHALI,Not Available
+Vakrangee Limited,VAKRANGEE,511431.0
+Valiant Laboratories Limited,VALIANTLAB,543998.0
+Valiant Organics Limited,VALIANTORG,540145.0
+Vardhman Acrylics Limited,VARDHACRLC,Not Available
+Vardhman Polytex Limited,VARDMNPOLY,514175.0
+Varroc Engineering Limited,VARROC,541578.0
+Vascon Engineers Limited,VASCONEQ,533156.0
+Vaswani Industries Limited,VASWANI,533576.0
+Varun Beverages Limited,VBL,540180.0
+Vaxtex Cotfab Limited,VCL,Not Available
+Vedanta Limited,VEDL,500295.0
+Veedol Corporation Limited,VEEDOL,590005.0
+Venky's (India) Limited,VENKEYS,523261.0
+Ventive Hospitality Limited,VENTIVE,544321.0
+Venus Pipes & Tubes Limited,VENUSPIPES,543528.0
+Venus Remedies Limited,VENUSREM,526953.0
+Veranda Learning Solutions Limited,VERANDA,Not Available
+Vertoz Limited,VERTOZ,Not Available
+Vesuvius India Limited,VESUVIUS,520113.0
+Veto Switchgears And Cables Limited,VETO,Not Available
+V-Guard Industries Limited,VGUARD,532953.0
+Vardhman Holdings Limited,VHL,500439.0
+Viceroy Hotels Limited,VHLTD,523796.0
+Vidhi Specialty Food Ingredients Limited,VIDHIING,Not Available
+Vijaya Diagnostic Centre Limited,VIJAYA,Not Available
+Viji Finance Limited,VIJIFIN,537820.0
+Vikas EcoTech Limited,VIKASECO,530961.0
+Vikas Lifecare Limited,VIKASLIFE,542655.0
+Vimta Labs Limited,VIMTALABS,524394.0
+Vinati Organics Limited,VINATIORGA,524200.0
+Vintage Coffee And Beverages Limited,VINCOFE,Not Available
+Vindhya Telelinks Limited,VINDHYATEL,517015.0
+Vineet Laboratories Limited,VINEETLAB,543298.0
+Vinny Overseas Limited,VINNY,543670.0
+Vinyl Chemicals (India) Limited,VINYLINDIA,524129.0
+VIP Clothing Limited,VIPCLOTHNG,532613.0
+VIP Industries Limited,VIPIND,Not Available
+Vipul Limited,VIPULLTD,511726.0
+Virinchi Limited,VIRINCHI,532372.0
+Visaka Industries Limited,VISAKAIND,509055.0
+Visa Steel Limited,VISASTEEL,532721.0
+Vishnu Chemicals Limited,VISHNU,516072.0
+Vishwaraj Sugar Industries Limited,VISHWARAJ,Not Available
+Visagar Polytex Limited,VIVIDHA,506146.0
+VL E-Governance & IT Solutions Limited,VLEGOV,543958.0
+VLS Finance Limited,VLSFINANCE,511333.0
+V-Mart Retail Limited,VMART,534976.0
+Vishal Mega Mart Limited,VMM,544307.0
+Voltamp Transformers Limited,VOLTAMP,532757.0
+Voltas Limited,VOLTAS,500575.0
+Vishnu Prakash R Punglia Limited,VPRPL,Not Available
+Vraj Iron and Steel Limited,VRAJ,544204.0
+VRL Logistics Limited,VRLLOG,539118.0
+Vardhman Special Steels Limited,VSSL,534392.0
+VST Industries Limited,VSTIND,509966.0
+Vibhor Steel Tubes Limited,VSTL,544124.0
+V.S.T Tillers Tractors Limited,VSTTILLERS,Not Available
+Vardhman Textiles Limited,VTL,502986.0
+Waaree Energies Limited,WAAREEENER,544277.0
+Waaree Renewable Technologies Limited,WAAREERTL,534618.0
+VA Tech Wabag Limited,WABAG,533269.0
+Walchandnagar Industries Limited,WALCHANNAG,507410.0
+Wanbury Limited,WANBURY,524212.0
+Western Carriers (India) Limited,WCIL,Not Available
+Wealth First Portfolio Managers Limited,WEALTH,Not Available
+Websol Energy System Limited,WEBELSOLAR,517498.0
+Weizmann Limited,WEIZMANIND,523011.0
+Wonder Electricals Limited,WEL,543449.0
+Welspun Corp Limited,WELCORP,532144.0
+Welspun Enterprises Limited,WELENT,Not Available
+Welspun Investments and Commercials Limited,WELINV,Not Available
+Welspun Living Limited,WELSPUNLIV,514162.0
+Wendt (India) Limited,WENDT,505412.0
+WESTLIFE FOODWORLD LIMITED,WESTLIFE,505533.0
+WE WIN LIMITED,WEWIN,543535.0
+Wheels India Limited,WHEELS,590073.0
+Whirlpool of India Limited,WHIRLPOOL,500238.0
+Williamson Magor & Company Limited,WILLAMAGOR,519224.0
+Windlas Biotech Limited,WINDLAS,543329.0
+Windsor Machines Limited,WINDMACHIN,522029.0
+Winsome Yarns Limited,WINSOME,514348.0
+The Western India Plywoods Limited,WIPL,Not Available
+Wipro Limited,WIPRO,507685.0
+Wockhardt Limited,WOCKPHARMA,532300.0
+Wonderla Holidays Limited,WONDERLA,538268.0
+Worth Peripherals Limited,WORTH,Not Available
+W S Industries (I) Limited,WSI,Not Available
+West Coast Paper Mills Limited,WSTCSTPAPR,500444.0
+Xchanging Solutions Limited,XCHANGING,532616.0
+Xelpmoc Design And Tech Limited,XELPMOC,Not Available
+Xpro India Limited,XPROINDIA,590013.0
+Xtglobal Infotech Limited,XTGLOBAL,531225.0
+Yaari Digital Integrated Services Limited,YAARI,Not Available
+Yasho Industries Limited,YASHO,541167.0
+Yatharth Hospital & Trauma Care Services Limited,YATHARTH,Not Available
+Yatra Online Limited,YATRA,543992.0
+Yes Bank Limited,YESBANK,532648.0
+Yuken India Limited,YUKEN,522108.0
+Zaggle Prepaid Ocean Services Limited,ZAGGLE,543985.0
+Zee Entertainment Enterprises Limited,ZEEL,505537.0
+Zee Learn Limited,ZEELEARN,533287.0
+Zee Media Corporation Limited,ZEEMEDIA,532794.0
+Zenith Exports Limited,ZENITHEXPO,512553.0
+Zenith Steel Pipes & Industries Limited,ZENITHSTL,Not Available
+Zensar Technologies Limited,ZENSARTECH,504067.0
+Zen Technologies Limited,ZENTEC,533339.0
+ZF Commercial Vehicle Control Systems India Limited,ZFCVINDIA,Not Available
+Zim Laboratories Limited,ZIMLAB,541400.0
+Zodiac Energy Limited,ZODIAC,543416.0
+Zodiac Clothing Company Limited,ZODIACLOTH,Not Available
+Zota Health Care LImited,ZOTA,Not Available
+Zuari Agro Chemicals Limited,ZUARI,534742.0
+ZUARI INDUSTRIES LIMITED,ZUARIIND,500780.0
+Zydus Lifesciences Limited,ZYDUSLIFE,532321.0
+Zydus Wellness Limited,ZYDUSWELL,531335.0
