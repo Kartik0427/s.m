@@ -6,31 +6,36 @@ from datetime import datetime
 
 # --- Page Configuration ---
 st.set_page_config(
-    page_title="Angel One - Debug Dashboard",
-    page_icon="🐞",
+    page_title="Angel One - Real-Time Dashboard",
+    page_icon="😇",
     layout="wide",
 )
 
 # --- Helper Functions ---
 @st.cache_data(ttl=3600)
 def load_instrument_list():
+    """Loads the instrument list from the pre-generated CSV file."""
     try:
-        return pd.read_csv("instrument_list.csv")
+        # Read the 'api_symbol' column as string to prevent type issues
+        return pd.read_csv("instrument_list.csv", dtype={'api_symbol': str})
     except FileNotFoundError:
-        st.error("Error: `instrument_list.csv` not found. Please run `generate_instrument_list.py` first.", icon="🔥")
+        st.error("Error: `instrument_list.csv` not found. Please run `generate_instrument_list.py` script.", icon="🔥")
         return None
 
 def get_token(instrument_df, symbol, exchange):
+    """Finds the token for a given symbol and exchange."""
     if instrument_df is None: return None
-    res = instrument_df[(instrument_df['api_symbol'] == symbol) & (instrument_df['exch_seg'] == exchange)]
+    res = instrument_df[
+        (instrument_df['api_symbol'] == str(symbol)) & 
+        (instrument_df['exch_seg'] == exchange)
+    ]
     return res.iloc[0]['token'] if not res.empty else None
 
 # --- Main Application Logic ---
-st.title("🐞 Angel One - Debug Dashboard")
+st.title("😇 Angel One - Real-Time Price Dashboard")
 
 # --- User Authentication ---
 st.sidebar.header("Angel One Login")
-# Use st.session_state to preserve input values after reruns
 if 'api_key' not in st.session_state: st.session_state.api_key = ''
 if 'client_id' not in st.session_state: st.session_state.client_id = ''
 if 'password' not in st.session_state: st.session_state.password = ''
@@ -65,68 +70,89 @@ if st.sidebar.button("Login"):
 if st.session_state.smart_api_obj is None:
     st.info("Please log in using the sidebar to view the dashboard.")
 else:
-    # Load mapping files
     instrument_df = load_instrument_list()
     stock_df = pd.read_csv("bse_nse_mapping.csv")
 
     st.sidebar.header("Dashboard Controls")
-    num_stocks = st.sidebar.slider("Number of Stocks to Display", 1, len(stock_df), 3)
+    refresh_rate = st.sidebar.slider("Refresh Rate (seconds)", 5, 60, 10)
+    num_stocks = st.sidebar.slider("Number of Stocks to Display", 1, len(stock_df), 10)
+    
+    # --- ADDED DEBUG OPTION ---
+    debug_mode = st.sidebar.checkbox("Show Debug Log 🐞")
 
-    st.header("Live Price Comparison Table")
     placeholder = st.empty()
     
-    st.header("🐞 Debugging Log")
-    log_placeholder = st.container()
+    # Create a container for the debug log if the mode is on
+    if debug_mode:
+        st.markdown("---") # Visual separator
+        log_placeholder = st.container()
 
     while True:
         subset_df = stock_df.head(num_stocks)
         results = []
 
-        with log_placeholder:
-            st.write("---")
-            st.write(f"**Cycle Start: {datetime.now().strftime('%I:%M:%S %p')}**")
+        # If debug mode is on, prepare to log information
+        if debug_mode:
+            log_placeholder.markdown(f"**Cycle Start: {datetime.now().strftime('%I:%M:%S %p')}**")
 
-            for _, row in subset_df.iterrows():
-                nse_symbol = row['nseSymbol']
-                bse_code = str(row['bseScripCode'])
-                
-                nse_token = get_token(instrument_df, nse_symbol, 'NSE')
-                bse_token = get_token(instrument_df, bse_code, 'BSE')
-                
-                st.write(f"Processing {row['companyName']}: NSE Symbol='{nse_symbol}', BSE Code='{bse_code}'")
-                st.write(f"Found Tokens -> NSE: `{nse_token}`, BSE: `{bse_token}`")
+        for _, row in subset_df.iterrows():
+            nse_symbol = row['nseSymbol']
+            bse_code = str(row['bseScripCode'])
+            
+            nse_token = get_token(instrument_df, nse_symbol, 'NSE')
+            bse_token = get_token(instrument_df, bse_code, 'BSE')
 
-                nse_price, bse_price = None, None
-                
-                # Fetch NSE Price
-                if nse_token:
-                    try:
-                        ltp_data = st.session_state.smart_api_obj.ltpData("NSE", nse_symbol, str(nse_token))
-                        if ltp_data.get('status') == True:
-                            nse_price = ltp_data.get('data', {}).get('ltp')
-                        else:
-                            st.error(f"NSE API Error for {nse_symbol}:")
-                            st.json(ltp_data) # Print the full error response
-                    except Exception as e:
-                        st.error(f"NSE Exception for {nse_symbol}: {e}")
+            # Log token lookup results if debug mode is on
+            if debug_mode:
+                log_placeholder.write(f"Processing `{row['companyName']}`: Found Tokens -> NSE: `{nse_token}`, BSE: `{bse_token}`")
 
-                # Fetch BSE Price
-                if bse_token:
-                    try:
-                        ltp_data = st.session_state.smart_api_obj.ltpData("BSE", bse_code, str(bse_token))
-                        if ltp_data.get('status') == True:
-                            bse_price = ltp_data.get('data', {}).get('ltp')
-                        else:
-                            st.error(f"BSE API Error for {bse_code}:")
-                            st.json(ltp_data)
-                    except Exception as e:
-                        st.error(f"BSE Exception for {bse_code}: {e}")
+            nse_price, bse_price = None, None
+            
+            # Fetch NSE Price
+            if nse_token:
+                try:
+                    ltp_data = st.session_state.smart_api_obj.ltpData("NSE", nse_symbol, str(nse_token))
+                    if ltp_data.get('status'):
+                        nse_price = ltp_data.get('data', {}).get('ltp')
+                    elif debug_mode: # Log errors only in debug mode
+                        log_placeholder.error(f"NSE API Error for `{nse_symbol}`:")
+                        log_placeholder.json(ltp_data)
+                except Exception as e:
+                    if debug_mode: log_placeholder.error(f"NSE Exception: {e}")
 
-                results.append({
-                    "Company Name": row['companyName'], "NSE Price (₹)": nse_price, "BSE Price (₹)": bse_price,
-                })
+            # Fetch BSE Price
+            if bse_token:
+                try:
+                    ltp_data = st.session_state.smart_api_obj.ltpData("BSE", bse_code, str(bse_token))
+                    if ltp_data.get('status'):
+                        bse_price = ltp_data.get('data', {}).get('ltp')
+                    elif debug_mode:
+                        log_placeholder.error(f"BSE API Error for `{bse_code}`:")
+                        log_placeholder.json(ltp_data)
+                except Exception as e:
+                    if debug_mode: log_placeholder.error(f"BSE Exception: {e}")
 
-        # --- Display Results ---
+            difference, percentage_diff = None, None
+            if nse_price is not None and bse_price is not None:
+                difference = nse_price - bse_price
+                percentage_diff = (difference / nse_price) * 100 if nse_price != 0 else 0
+
+            results.append({
+                "Company Name": row['companyName'], "NSE Price (₹)": nse_price, "BSE Price (₹)": bse_price,
+                "Difference (₹)": difference, "Difference (%)": percentage_diff,
+            })
+
         results_df = pd.DataFrame(results)
-        placeholder.dataframe(results_df, use_container_width=True, hide_index=True)
-        time.sleep(15) # Use a longer refresh for debugging
+
+        with placeholder.container():
+            st.header("Live Price Comparison Table")
+            st.dataframe(
+                results_df.style.format({
+                    "NSE Price (₹)": "₹{:,.2f}", "BSE Price (₹)": "₹{:,.2f}",
+                    "Difference (₹)": "{:+.2f}", "Difference (%)": "{:+.2f}%",
+                }, na_rep="N/A"),
+                use_container_width=True, hide_index=True
+            )
+            st.caption(f"Last updated: {datetime.now().strftime('%I:%M:%S %p')}")
+
+        time.sleep(refresh_rate)
