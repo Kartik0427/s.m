@@ -70,9 +70,10 @@ if st.sidebar.button("Login"):
                 else:
                     st.sidebar.error(f"Login Failed: {data.get('message', 'Unknown error')}", icon="❌")
             except Exception as e:
-                st.sidebar.error(f"An error occurred during login: {e}", icon="🔥")
+                st.sidebar.error(f"An error occurred: {e}", icon="🔥")
     else:
         st.sidebar.warning("Please fill in all login details.", icon="⚠️")
+
 
 # --- Main Dashboard ---
 if st.session_state.smart_api_obj is None:
@@ -107,6 +108,7 @@ else:
         results = []
 
         for _, row in subset_df.iterrows():
+            # Data fetching logic
             nse_symbol = row['nseSymbol']
             bse_code = str(row['bseScripCode'])
             nse_token = row['nse_token']
@@ -114,26 +116,16 @@ else:
             
             nse_price, bse_price = None, None
             
-            # --- MODIFIED: Added more detailed error checking ---
             if nse_token:
                 try:
                     ltp_data = st.session_state.smart_api_obj.ltpData("NSE", nse_symbol, str(nse_token))
-                    if ltp_data.get('status'): 
-                        nse_price = ltp_data.get('data', {}).get('ltp')
-                    else:
-                        st.error(f"NSE Error for {nse_symbol}: {ltp_data.get('message')}")
-                except Exception as e: 
-                    st.error(f"A critical error occurred fetching NSE price for {nse_symbol}: {e}")
-
+                    if ltp_data.get('status'): nse_price = ltp_data.get('data', {}).get('ltp')
+                except Exception: pass
             if bse_token:
                 try:
                     ltp_data = st.session_state.smart_api_obj.ltpData("BSE", bse_code, str(bse_token))
-                    if ltp_data.get('status'): 
-                        bse_price = ltp_data.get('data', {}).get('ltp')
-                    else:
-                        st.error(f"BSE Error for {bse_code}: {ltp_data.get('message')}")
-                except Exception as e:
-                    st.error(f"A critical error occurred fetching BSE price for {bse_code}: {e}")
+                    if ltp_data.get('status'): bse_price = ltp_data.get('data', {}).get('ltp')
+                except Exception: pass
 
             difference, percentage_diff = None, None
             if nse_price is not None and bse_price is not None:
@@ -144,40 +136,52 @@ else:
                 "Company Name": row['companyName'], "NSE Price (₹)": nse_price, "BSE Price (₹)": bse_price,
                 "Difference (₹)": difference, "Difference (%)": percentage_diff,
             })
+        
+        results_df = pd.DataFrame(results)
+        
+        # --- THIS IS THE FIX ---
+        # First, filter out rows where the calculation is not possible
+        valid_df = results_df.dropna(subset=['Difference (%)', 'Difference (₹)']).copy()
 
-        results_df = pd.DataFrame(results) # Removed .dropna() to see partial data
+        if not valid_df.empty:
+            # Perform calculations only on the valid data
+            valid_df['abs_diff_pct'] = valid_df['Difference (%)'].abs()
+            valid_df['abs_diff_rs'] = valid_df['Difference (₹)'].abs()
+            
+            filtered_df = valid_df[valid_df['abs_diff_pct'] >= min_diff_filter]
 
-        if not results_df.empty:
-            # Filtering and sorting logic
-            results_df['abs_diff_pct'] = results_df['Difference (%)'].abs()
-            results_df['abs_diff_rs'] = results_df['Difference (₹)'].abs()
-            
-            # Use a copy to avoid SettingWithCopyWarning
-            filtered_df = results_df[results_df['abs_diff_pct'].notna() & (results_df['abs_diff_pct'] >= min_diff_filter)].copy()
-            
             if sort_by == "Biggest Difference (%)":
-                filtered_df.sort_values(by="abs_diff_pct", ascending=False, inplace=True)
+                filtered_df = filtered_df.sort_values(by="abs_diff_pct", ascending=False)
             elif sort_by == "Biggest Difference (₹)":
-                filtered_df.sort_values(by="abs_diff_rs", ascending=False, inplace=True)
+                filtered_df = filtered_df.sort_values(by="abs_diff_rs", ascending=False)
             
             display_df = filtered_df.drop(columns=['abs_diff_pct', 'abs_diff_rs'])
         else:
-            display_df = results_df
+            display_df = valid_df # Display empty frame if nothing matches filter
 
         with placeholder.container():
             st.header("Live Price Comparison Table")
+            
             if not display_df.empty:
                 st.dataframe(
-                    display_df.style.background_gradient(cmap='RdYlGn', subset=['Difference (₹)', 'Difference (%)'])
-                    .format({"NSE Price (₹)": "₹{:,.2f}", "BSE Price (₹)": "₹{:,.2f}", "Difference (₹)": "{:+.2f}", "Difference (%)": "{:+.2f}%"}, na_rep="N/A"),
-                    use_container_width=True, hide_index=True
+                    display_df.style.background_gradient(
+                        cmap='RdYlGn', subset=['Difference (₹)', 'Difference (%)']
+                    ).format({
+                        "NSE Price (₹)": "₹{:,.2f}",
+                        "BSE Price (₹)": "₹{:,.2f}",
+                        "Difference (₹)": "{:+.2f}",
+                        "Difference (%)": "{:+.2f}%",
+                    }),
+                    use_container_width=True, 
+                    hide_index=True
                 )
             else:
                 st.info("No stocks currently meet your filter criteria or data is unavailable.")
+
             col1, col2 = st.columns([3, 1])
             with col1:
                 st.caption(f"Last updated: {datetime.now().strftime('%I:%M:%S %p')}")
             with col2:
                 display_heatmap_legend()
-        
+
         time.sleep(refresh_rate)
