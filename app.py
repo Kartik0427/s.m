@@ -29,6 +29,7 @@ def get_token(instrument_df, symbol, exchange):
     return res.iloc[0]['token'] if not res.empty else None
 
 def display_heatmap_legend():
+    """Displays a manual legend for the heatmap colors."""
     legend_html = """
     <div style="display: flex; align-items: center; justify-content: flex-end; font-size: 14px; padding-top: 10px;">
         <span style="margin-right: 10px;">Legend:</span>
@@ -90,16 +91,12 @@ else:
     )
     st.sidebar.subheader("Filters & Sorting")
     min_diff_filter = st.sidebar.number_input(
-        "Minimum Absolute Difference (%)", 0.00, 5.0, 0.05, 0.01
+        "Minimum Absolute Difference (%)", 0.00, 5.0, 0.0, 0.01
     )
     sort_by = st.sidebar.selectbox(
         "Sort Table By",
         ["Default", "Biggest Difference (%)", "Biggest Difference (₹)"]
     )
-    
-    with st.spinner("Preparing stock data..."):
-        stock_df['nse_token'] = stock_df['nseSymbol'].apply(lambda x: get_token(instrument_df, x, 'NSE'))
-        stock_df['bse_token'] = stock_df['nseSymbol'].apply(lambda x: get_token(instrument_df, x, 'BSE'))
     
     placeholder = st.empty()
 
@@ -108,11 +105,11 @@ else:
         results = []
 
         for _, row in subset_df.iterrows():
-            # Data fetching logic
+            # Token lookup is done inside the loop in this version
             nse_symbol = row['nseSymbol']
             bse_code = str(row['bseScripCode'])
-            nse_token = row['nse_token']
-            bse_token = row['bse_token']
+            nse_token = get_token(instrument_df, nse_symbol, 'NSE')
+            bse_token = get_token(instrument_df, nse_symbol, 'BSE')
             
             nse_price, bse_price = None, None
             
@@ -136,28 +133,26 @@ else:
                 "Company Name": row['companyName'], "NSE Price (₹)": nse_price, "BSE Price (₹)": bse_price,
                 "Difference (₹)": difference, "Difference (%)": percentage_diff,
             })
-        
-        results_df = pd.DataFrame(results)
-        
-        # --- THIS IS THE FIX ---
-        # First, filter out rows where the calculation is not possible
-        valid_df = results_df.dropna(subset=['Difference (%)', 'Difference (₹)']).copy()
 
-        if not valid_df.empty:
-            # Perform calculations only on the valid data
-            valid_df['abs_diff_pct'] = valid_df['Difference (%)'].abs()
-            valid_df['abs_diff_rs'] = valid_df['Difference (₹)'].abs()
+        # Create DataFrame and drop any rows where price fetching failed for either exchange
+        results_df = pd.DataFrame(results).dropna(subset=['NSE Price (₹)', 'BSE Price (₹)'])
+        
+        if not results_df.empty:
+            results_df['abs_diff_pct'] = results_df['Difference (%)'].abs()
+            results_df['abs_diff_rs'] = results_df['Difference (₹)'].abs()
             
-            filtered_df = valid_df[valid_df['abs_diff_pct'] >= min_diff_filter]
+            filtered_df = results_df[results_df['abs_diff_pct'] >= min_diff_filter]
 
             if sort_by == "Biggest Difference (%)":
                 filtered_df = filtered_df.sort_values(by="abs_diff_pct", ascending=False)
             elif sort_by == "Biggest Difference (₹)":
                 filtered_df = filtered_df.sort_values(by="abs_diff_rs", ascending=False)
+            else:
+                filtered_df = results_df # Default view
             
-            display_df = filtered_df.drop(columns=['abs_diff_pct', 'abs_diff_rs'])
+            display_df = filtered_df.drop(columns=['abs_diff_pct', 'abs_diff_rs'], errors='ignore')
         else:
-            display_df = valid_df # Display empty frame if nothing matches filter
+            display_df = results_df
 
         with placeholder.container():
             st.header("Live Price Comparison Table")
