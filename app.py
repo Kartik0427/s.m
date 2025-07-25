@@ -14,7 +14,6 @@ st.set_page_config(
 # --- Helper Functions ---
 @st.cache_data(ttl=3600)
 def load_instrument_list():
-    """Loads the instrument list from the pre-generated CSV file."""
     try:
         return pd.read_csv("instrument_list.csv", dtype={'api_symbol': str})
     except FileNotFoundError:
@@ -22,7 +21,6 @@ def load_instrument_list():
         return None
 
 def get_token(instrument_df, symbol, exchange):
-    """Finds the token for a given symbol and exchange."""
     if instrument_df is None: return None
     res = instrument_df[
         (instrument_df['api_symbol'] == str(symbol)) & 
@@ -31,7 +29,6 @@ def get_token(instrument_df, symbol, exchange):
     return res.iloc[0]['token'] if not res.empty else None
 
 def display_heatmap_legend():
-    """Displays a manual legend for the heatmap colors."""
     legend_html = """
     <div style="display: flex; align-items: center; justify-content: flex-end; font-size: 14px; padding-top: 10px;">
         <span style="margin-right: 10px;">Legend:</span>
@@ -73,10 +70,9 @@ if st.sidebar.button("Login"):
                 else:
                     st.sidebar.error(f"Login Failed: {data.get('message', 'Unknown error')}", icon="❌")
             except Exception as e:
-                st.sidebar.error(f"An error occurred: {e}", icon="🔥")
+                st.sidebar.error(f"An error occurred during login: {e}", icon="🔥")
     else:
         st.sidebar.warning("Please fill in all login details.", icon="⚠️")
-
 
 # --- Main Dashboard ---
 if st.session_state.smart_api_obj is None:
@@ -100,39 +96,44 @@ else:
         ["Default", "Biggest Difference (%)", "Biggest Difference (₹)"]
     )
     
-    # --- OPTIMIZATION: Pre-fetch all tokens once ---
     with st.spinner("Preparing stock data..."):
-        # Create new columns for the tokens
         stock_df['nse_token'] = stock_df['nseSymbol'].apply(lambda x: get_token(instrument_df, x, 'NSE'))
         stock_df['bse_token'] = stock_df['nseSymbol'].apply(lambda x: get_token(instrument_df, x, 'BSE'))
     
     placeholder = st.empty()
 
     while True:
-        # We now use the pre-processed stock_df
         subset_df = stock_df.head(num_stocks)
         results = []
 
         for _, row in subset_df.iterrows():
             nse_symbol = row['nseSymbol']
             bse_code = str(row['bseScripCode'])
-            # --- OPTIMIZATION: Get tokens directly from the DataFrame ---
             nse_token = row['nse_token']
             bse_token = row['bse_token']
             
             nse_price, bse_price = None, None
             
-            # Data fetching logic is the same
+            # --- MODIFIED: Added more detailed error checking ---
             if nse_token:
                 try:
                     ltp_data = st.session_state.smart_api_obj.ltpData("NSE", nse_symbol, str(nse_token))
-                    if ltp_data.get('status'): nse_price = ltp_data.get('data', {}).get('ltp')
-                except Exception: pass
+                    if ltp_data.get('status'): 
+                        nse_price = ltp_data.get('data', {}).get('ltp')
+                    else:
+                        st.error(f"NSE Error for {nse_symbol}: {ltp_data.get('message')}")
+                except Exception as e: 
+                    st.error(f"A critical error occurred fetching NSE price for {nse_symbol}: {e}")
+
             if bse_token:
                 try:
                     ltp_data = st.session_state.smart_api_obj.ltpData("BSE", bse_code, str(bse_token))
-                    if ltp_data.get('status'): bse_price = ltp_data.get('data', {}).get('ltp')
-                except Exception: pass
+                    if ltp_data.get('status'): 
+                        bse_price = ltp_data.get('data', {}).get('ltp')
+                    else:
+                        st.error(f"BSE Error for {bse_code}: {ltp_data.get('message')}")
+                except Exception as e:
+                    st.error(f"A critical error occurred fetching BSE price for {bse_code}: {e}")
 
             difference, percentage_diff = None, None
             if nse_price is not None and bse_price is not None:
@@ -144,28 +145,35 @@ else:
                 "Difference (₹)": difference, "Difference (%)": percentage_diff,
             })
 
-        results_df = pd.DataFrame(results).dropna()
+        results_df = pd.DataFrame(results) # Removed .dropna() to see partial data
 
         if not results_df.empty:
+            # Filtering and sorting logic
             results_df['abs_diff_pct'] = results_df['Difference (%)'].abs()
             results_df['abs_diff_rs'] = results_df['Difference (₹)'].abs()
-            results_df = results_df[results_df['abs_diff_pct'] >= min_diff_filter]
+            
+            # Use a copy to avoid SettingWithCopyWarning
+            filtered_df = results_df[results_df['abs_diff_pct'].notna() & (results_df['abs_diff_pct'] >= min_diff_filter)].copy()
+            
             if sort_by == "Biggest Difference (%)":
-                results_df = results_df.sort_values(by="abs_diff_pct", ascending=False)
+                filtered_df.sort_values(by="abs_diff_pct", ascending=False, inplace=True)
             elif sort_by == "Biggest Difference (₹)":
-                results_df = results_df.sort_values(by="abs_diff_rs", ascending=False)
-            results_df = results_df.drop(columns=['abs_diff_pct', 'abs_diff_rs'])
+                filtered_df.sort_values(by="abs_diff_rs", ascending=False, inplace=True)
+            
+            display_df = filtered_df.drop(columns=['abs_diff_pct', 'abs_diff_rs'])
+        else:
+            display_df = results_df
 
         with placeholder.container():
             st.header("Live Price Comparison Table")
-            if not results_df.empty:
+            if not display_df.empty:
                 st.dataframe(
-                    results_df.style.background_gradient(cmap='RdYlGn', subset=['Difference (₹)', 'Difference (%)'])
-                    .format({"NSE Price (₹)": "₹{:,.2f}", "BSE Price (₹)": "₹{:,.2f}", "Difference (₹)": "{:+.2f}", "Difference (%)": "{:+.2f}%"}),
+                    display_df.style.background_gradient(cmap='RdYlGn', subset=['Difference (₹)', 'Difference (%)'])
+                    .format({"NSE Price (₹)": "₹{:,.2f}", "BSE Price (₹)": "₹{:,.2f}", "Difference (₹)": "{:+.2f}", "Difference (%)": "{:+.2f}%"}, na_rep="N/A"),
                     use_container_width=True, hide_index=True
                 )
             else:
-                st.info("No stocks currently meet your filter criteria.")
+                st.info("No stocks currently meet your filter criteria or data is unavailable.")
             col1, col2 = st.columns([3, 1])
             with col1:
                 st.caption(f"Last updated: {datetime.now().strftime('%I:%M:%S %p')}")
