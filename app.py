@@ -14,6 +14,7 @@ st.set_page_config(
 # --- Helper Functions ---
 @st.cache_data(ttl=3600)
 def load_instrument_list():
+    """Loads the instrument list from the pre-generated CSV file."""
     try:
         return pd.read_csv("instrument_list.csv", dtype={'api_symbol': str})
     except FileNotFoundError:
@@ -21,6 +22,7 @@ def load_instrument_list():
         return None
 
 def get_token(instrument_df, symbol, exchange):
+    """Finds the token for a given symbol and exchange."""
     if instrument_df is None: return None
     res = instrument_df[
         (instrument_df['api_symbol'] == str(symbol)) & 
@@ -75,6 +77,7 @@ if st.sidebar.button("Login"):
     else:
         st.sidebar.warning("Please fill in all login details.", icon="⚠️")
 
+
 # --- Main Dashboard ---
 if st.session_state.smart_api_obj is None:
     st.info("Please log in using the sidebar to view the dashboard.")
@@ -84,17 +87,10 @@ else:
 
     st.sidebar.header("Dashboard Controls")
     refresh_rate = st.sidebar.slider("Refresh Rate (seconds)", 5, 60, 10)
-    
-    # --- CHANGED: Replaced slider with number input ---
     num_stocks = st.sidebar.number_input(
-        "Number of Stocks to Display",
-        min_value=1,
-        max_value=len(stock_df),
-        value=10,
-        step=1,
-        help=f"Enter a number between 1 and {len(stock_df)}."
+        "Number of Stocks to Display", min_value=1, max_value=len(stock_df),
+        value=10, step=1, help=f"Enter a number between 1 and {len(stock_df)}."
     )
-
     st.sidebar.subheader("Filters & Sorting")
     min_diff_filter = st.sidebar.number_input(
         "Minimum Absolute Difference (%)", 0.00, 5.0, 0.05, 0.01
@@ -104,20 +100,29 @@ else:
         ["Default", "Biggest Difference (%)", "Biggest Difference (₹)"]
     )
     
+    # --- OPTIMIZATION: Pre-fetch all tokens once ---
+    with st.spinner("Preparing stock data..."):
+        # Create new columns for the tokens
+        stock_df['nse_token'] = stock_df['nseSymbol'].apply(lambda x: get_token(instrument_df, x, 'NSE'))
+        stock_df['bse_token'] = stock_df['nseSymbol'].apply(lambda x: get_token(instrument_df, x, 'BSE'))
+    
     placeholder = st.empty()
 
     while True:
+        # We now use the pre-processed stock_df
         subset_df = stock_df.head(num_stocks)
         results = []
 
         for _, row in subset_df.iterrows():
-            # Data fetching logic
             nse_symbol = row['nseSymbol']
             bse_code = str(row['bseScripCode'])
-            nse_token = get_token(instrument_df, nse_symbol, 'NSE')
-            bse_token = get_token(instrument_df, nse_symbol, 'BSE')
+            # --- OPTIMIZATION: Get tokens directly from the DataFrame ---
+            nse_token = row['nse_token']
+            bse_token = row['bse_token']
+            
             nse_price, bse_price = None, None
             
+            # Data fetching logic is the same
             if nse_token:
                 try:
                     ltp_data = st.session_state.smart_api_obj.ltpData("NSE", nse_symbol, str(nse_token))
@@ -145,37 +150,26 @@ else:
             results_df['abs_diff_pct'] = results_df['Difference (%)'].abs()
             results_df['abs_diff_rs'] = results_df['Difference (₹)'].abs()
             results_df = results_df[results_df['abs_diff_pct'] >= min_diff_filter]
-
             if sort_by == "Biggest Difference (%)":
                 results_df = results_df.sort_values(by="abs_diff_pct", ascending=False)
             elif sort_by == "Biggest Difference (₹)":
                 results_df = results_df.sort_values(by="abs_diff_rs", ascending=False)
-            
             results_df = results_df.drop(columns=['abs_diff_pct', 'abs_diff_rs'])
 
         with placeholder.container():
             st.header("Live Price Comparison Table")
-            
             if not results_df.empty:
                 st.dataframe(
-                    results_df.style.background_gradient(
-                        cmap='RdYlGn', subset=['Difference (₹)', 'Difference (%)']
-                    ).format({
-                        "NSE Price (₹)": "₹{:,.2f}",
-                        "BSE Price (₹)": "₹{:,.2f}",
-                        "Difference (₹)": "{:+.2f}",
-                        "Difference (%)": "{:+.2f}%",
-                    }),
-                    use_container_width=True, 
-                    hide_index=True
+                    results_df.style.background_gradient(cmap='RdYlGn', subset=['Difference (₹)', 'Difference (%)'])
+                    .format({"NSE Price (₹)": "₹{:,.2f}", "BSE Price (₹)": "₹{:,.2f}", "Difference (₹)": "{:+.2f}", "Difference (%)": "{:+.2f}%"}),
+                    use_container_width=True, hide_index=True
                 )
             else:
                 st.info("No stocks currently meet your filter criteria.")
-
             col1, col2 = st.columns([3, 1])
             with col1:
                 st.caption(f"Last updated: {datetime.now().strftime('%I:%M:%S %p')}")
             with col2:
                 display_heatmap_legend()
-
+        
         time.sleep(refresh_rate)
